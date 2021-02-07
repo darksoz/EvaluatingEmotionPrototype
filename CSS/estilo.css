@@ -1,15 +1,19 @@
 body {
     font-family: sans-serif;
     background-color: #DCDCDC;
-
 }
 
 .cardBtn:hover{
     cursor: pointer;
-    background-color: #FFFF99;
+    background-color: #ada3a4;
 }
 
 .cardBtn{
     border-radius: 5%;
     overflow: hidden;
 }
+
+.navbar-brand {
+    color: #000000;
+    font-size: 2rem;
+    } 
