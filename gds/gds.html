@@ -20,7 +20,7 @@
         <h5 class="navbar-brand mx-auto title">Escala de Depressão Geriátrica - GDS</h5>
     </nav>
     <div class="container"></div>
-    <form>
+    <form name="myform">
     <div class="gds-form m-auto">
         <div class="ml-sm-5 mr-sm-5 mt-2 mb-2">
             <label for="exampleFormControlInput1" class="form-label"><b>Nome</b></label>
@@ -222,7 +222,7 @@
             </div>
         </div>
 
-        <button type="submit" class=" ml-sm-5 mr-sm-5 mt-2 mb-2 btn btn-primary">Primary</button>
+        <button type="submit" class=" ml-sm-5 mr-sm-5 mt-2 mb-2 btn btn-primary" onclick="displayRadioValue()">Primary</button>
     </form>
     </div>
     </div>
@@ -237,6 +237,37 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+        <script> 
+            function displayRadioValue() { 
+                //document.getElementById("result").innerHTML = "";
+                document.myform.submit();
+                let no = 0;
+                let yes = 0; 
+                let ele = document.getElementsByTagName('input'); 
+                let nome = document.getElementById("nome").value;
+                  
+                for(i = 0; i < ele.length; i++) { 
+
+                    if(ele[i].type="radio") { 
+                      
+                        if(ele[i].value === "Não" && ele[i].checked) 
+                            no++;
+                        else if (ele[i].value === "Sim" && ele[i].checked)
+                            yes++;
+                    } 
+                } 
+                console.log("Não: ", no);
+                console.log("Sim: ", yes);
+                let diagnostico;
+                if(yes > 5)
+                    diagnostico = "Suspeita de depressão"
+                else    
+                    diagnostico = "Indefinido"
+                alert(`Nome: ${nome}Não: ${no} e Sim: ${yes} e Resultado: ${diagnostico}`);
+
+            } 
+        </script> 
 </body>
 
 </html>
