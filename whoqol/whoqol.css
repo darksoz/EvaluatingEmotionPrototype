@@ -1,3 +1,11 @@
+.modal-intrucoes{
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+}
+
 .wrap {
     font:12px Arial, san-serif;
   }
