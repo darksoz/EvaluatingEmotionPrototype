@@ -1,21 +1,12 @@
-window.Font = function() {
-    var elementBody = document.querySelector('body');
-    var elementBtnIncreaseFont = document.getElementById('increase-font');
-    var elementBtnDecreaseFont = document.getElementById('decrease-font');
-    // Padrão de tamanho, equivale a 100% do valor definido no Body
-    var fontSize = 100;
-    // Valor de incremento ou decremento, equivale a 10% do valor do Body
-    var increaseDecrease = 10;
-
-    // Evento de click para aumentar a fonte
-    elementBtnIncreaseFont.addEventListener('click', function(event) {
-        fontSize = fontSize + increaseDecrease;
-        elementBody.style.fontSize = fontSize + '%';
-    });
-
-    // Evento de click para diminuir a fonte
-    elementBtnDecreaseFont.addEventListener('click', function(event) {
-        fontSize = fontSize - increaseDecrease;
-        elementBody.style.fontSize = fontSize + '%';
-    });
+window.Font = function(e) {
+    if (document.body.style.fontSize == "") {
+        document.body.style.fontSize = "1.0em";
+      }
+      
+    if(e=="aumentar"){
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (1 * 0.2) + "em";
+    }
+    else if(e=="diminuir"){
+        document.body.style.fontSize = parseFloat(document.body.style.fontSize) - (1 * 0.2) + "em";
+    }
 }
