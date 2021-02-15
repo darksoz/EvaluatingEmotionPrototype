@@ -3,6 +3,14 @@ body {
     background-color: #DCDCDC;
 }
 
+.modal-intrucoes{
+  float: right;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 20px;
+}
+
 .navbar-brand {
     color: #000000;
     font-size: 2rem;
