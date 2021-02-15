@@ -14,7 +14,7 @@
 
 
   <link rel="stylesheet" href="../CSS/contraste.css">
-  <link rel="stylesheet" href="cadastrar.css">
+  <link rel="stylesheet" href="entrar.css">
 
 
 
@@ -58,15 +58,43 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../telainicial/welcome.html">Página Inicial</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Cadastro</li>
+          <li class="breadcrumb-item active" aria-current="page">Entrar</li>
         </ol>
       </nav>
       
 
+
+      <div class="container">
+
+        <div class="wrapper fadeInDown ">
+            <div id="formContent">
+              <!-- Tabs Titles -->
+          
+              <!-- Icon -->
+              <div class="fadeIn first m-4">
+                <span class="far fa-user fa-2x">
+              </div>
+          
+              <!-- Login Form -->
+              <form action="../index.html">
+                <input type="text" id="login" class="fadeIn second" name="login" placeholder="E-mail" required>
+                <input type="password" id="password" class="fadeIn third" name="login" placeholder="Senha" required>
+                <input type="submit" class="fadeIn fourth" value="Entrar">
+              </form>
+          
+              <!-- Remind Passowrd -->
+              <div id="formFooter">
+                <a class="underlineHover" href="#">Esqueceu a senha?</a>
+              </div>
+          
+            </div>
+          </div>
+
+      </div>
     
 </body>
 
-<footer class="bg-light text-center text-lg-start">
+<footer class="bg-light text-center text-lg-start fixed-bottom">
   <!-- Copyright -->
   <div class="text-center p-3">
     © 2021 Suzane Santos dos Santos
