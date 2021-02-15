@@ -1,83 +1,88 @@
 <html>
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="welcome.css">
-        <title>Protótipos</title>
-      </head>    
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="../contraste.js"></script>
+  <script src="../fontsize.js"></script>
+  <link rel="stylesheet" href="../CSS/contraste.css">
+
+
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
+
+  <title>Protótipos</title>
+</head>
+
 <body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-mdb-toggle="collapse"
-              data-mdb-target="#navbarExample01"
-              aria-controls="navbarExample01"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarExample01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- Navbar -->
-      
-        <!-- Background image -->
-        <div  
-          class="p-5 text-center bg-image "
-          style="
-            background-image: url('capa2.jpg');
-            height: 36rem;
-          "
-        >
-          <div class="mask"  style="background-color: rgba(0, 0, 0, 0.8)">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                <h1 class="mb-3">Plataforma de Ferramentas de Avaliação de Respostas Emocionais</h1>
-                
-                <a class="btn btn-outline-light btn-lg mr-1"  href="../index.html" role="button"
-                  >Entrar</a> 
-                  <a class="btn btn-outline-light btn-lg"  href="../index.html" role="button"
-                  >Cadastrar</a>
-                
-              </div>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+
+          <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+            <li class="nav-item active"><a class="nav-link" href="#top" accesskey="1" id="increase-font"> <span class="fas fa-plus-circle fa-lg"></span> Aumentar
+                Fonte</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#menu" accesskey="2" id="decrease-font"
+                onclick="window.Font()"> <span class="fas fa-minus-circle fa-lg"></span> Diminuir Fonte</a></li>
+            <li class="nav-item active"><a class="nav-link" href="#altocontraste" id="altocontraste" accesskey="3"
+                onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><span
+                  class="fas fa-adjust fa-lg"></span> Contraste</a></li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <div class="container-fluid">
+
+      <!-- Background image -->
+      <div class="p-5 text-center bg-image " style="
+ background-image: url('capa2.jpg');
+ height: 36rem;
+">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.8)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Plataforma de Ferramentas de Avaliação de Respostas Emocionais</h1>
+
+              <a class="btn btn-outline-light btn-lg mr-1" href="../index.html" role="button">Entrar</a>
+              <a class="btn btn-outline-light btn-lg" href="../index.html" role="button">Cadastrar</a>
+
             </div>
           </div>
         </div>
-        <!-- Background image -->
-      </header>
+      </div>
+      <!-- Background image -->
+  </header>
+
+  </div>
+
+
 </body>
 
 <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3">
-      © 2021 Suzane Santos dos Santos
-      
-    </div>
-    <!-- Copyright -->
-  </footer>
+  <!-- Copyright -->
+  <div class="text-center p-3">
+    © 2021 Suzane Santos dos Santos
+
+  </div>
+  <!-- Copyright -->
+</footer>
+
 </html>
