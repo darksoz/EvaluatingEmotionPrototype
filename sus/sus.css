@@ -26,7 +26,7 @@
     margin:0;
     padding:0 0 35px;
     display:block;
-    border-bottom:2px solid #efefef;
+    border-bottom:2px solid #DCDCDC;
   }
   form .likert:last-of-type {border-bottom:0;}
   form .likert:before {
@@ -35,7 +35,7 @@
     top:11px;
     left:9.5%;
     display:block;
-    background-color:#efefef;
+    background-color: grey;
     height:4px;
     width:78%;
   }
