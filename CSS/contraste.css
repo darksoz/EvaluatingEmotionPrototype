@@ -34,6 +34,12 @@
 
 .contrast a{
     color: yellow !important;
+    
+}
+
+.contrast a:hover{
+    background-color: gray;
+    
 }
 
 .contrast button,
@@ -70,3 +76,4 @@
     border: 1px solid white !important;
     color: white !important;
 }
+
