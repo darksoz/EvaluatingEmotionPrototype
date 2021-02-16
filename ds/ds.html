@@ -11,29 +11,59 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="ds.css">
+    <script src="contraste.js"></script>
+    <link rel="stylesheet" href="../CSS/contraste.css">
 
-    <title>Protótipos</title>
+    <script src="../contraste.js"></script>
+    <script src="../fontsize.js"></script>
+
+    <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
+
+    <title>DS</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #d1c4be">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+            data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Plataforma de Ferramentas de Avaliação</a>
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarExample01">
 
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav" onclick="window.Font('aumentar')"
+                        accesskey="1" id="increase-font"> <span class="fas fa-plus-circle fa-lg"></span>
+                        Aumentar
+                        Fonte</a></li>
+                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
+                        accesskey="2" id="decrease-font" onclick="window.Font('diminuir')"> <span
+                            class="fas fa-minus-circle fa-lg btnav"></span> Diminuir Fonte</a></li>
+                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
+                        href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
+                        onkeydown="window.toggleContrast()"><span class="fas fa-adjust fa-lg"></span>
+                        Contraste</a></li>
+
+
+
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
+<!-- Navbar -->
+
+
+
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="..5/telainicial/welcome.html">Página Inicial</a></li>
+        <li class="breadcrumb-item"><a href="../index.html">Ferramentas</a></li>
+        <li class="breadcrumb-item active" aria-current="page">DS</li>
+    </ol>
+</nav>
 
     <div class="container">
 
@@ -44,10 +74,162 @@
 
             <div class="wrap">
                 <h1 class="likert-header">DS</h1>
+                <blockquote class="blockquote">
+                <p class="lead ml-5 p-3">A seguir serão apresentados pares de adjetivos opostos. Para cada par, marque a opção que melhor representa a sua avaliação sobre o sistema. Quanto mais próximo de um adjetivo, mais você concorda com ele. Veja os exemplos:
+                </p>
+                </blockquote>   
+
+                <form>
+                    <label class="statement">Você considera o sistema:</label>
+                    <p class="h5 ml-5" style="font-weight: bold;">Exemplo 1.</p>
+                    <ul class='likert'>
+
+                        <li style="font-weight: bold;">
+                            <h5>Útil</h3>
+                        </li>
+
+                        <li>
+
+                            <input type="radio" name="likert" value="strong_agree" checked>
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>6</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>7</label>
+                        </li>
+
+                        <li style="font-weight: bold;">
+                            <h5>Inútil</h3>
+                        </li>
+                        <p class = "h5 mt-4">Nesse caso, a pessoa considerou que o sistema foi útil, pois marcou uma opção mais próxima do adjetivo “útil”.</p>
+                    </ul>
+
+                    
+                   
+
+                    <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 2.</p>
+                    <ul class='likert'>
+
+                        <li style="font-weight: bold;">
+                            <h5>Útil</h3>
+                        </li>
+
+                        <li>
+
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree">
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree" checked>
+                            <label>6</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>7</label>
+                        </li>
+
+                        <li style="font-weight: bold;">
+                            <h5>Inútil</h3>
+                        </li>
+                        <p class = "h5 mt-4">Já nesse caso, a pessoa considerou o sistema como pouco útil, uma vez que marcou uma opção mais próxima do adjetivo “inútil”.
+                        </p>
+                    </ul>
+
+                    <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 3.</p>
+                    <ul class='likert'>
+
+                        <li style="font-weight: bold;">
+                            <h5>Útil</h3>
+                        </li>
+
+                        <li>
+
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>1</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>3</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="disagree" checked>
+                            <label>4</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>5</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>6</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likert" value="strong_agree">
+                            <label>7</label>
+                        </li>
+
+                        <li style="font-weight: bold;">
+                            <h5>Inútil</h3>
+                        </li>
+                        <p class = "h5 mt-4">Neste último exemplo, a pessoa apresentou uma avaliação neutra do sistema, pois selecionou uma opção igualmente distante de “útil” ou “inútil”. 
+                        </p>
+                    </ul>
+
+               
+                </form>
+ 
+                <hr>
+
                 <form action="">
+
+                    <blockquote class="blockquote">
+                        <p class="lead ml-5 p-3"> Baseado nesse modelo de respostas avalie a sua experiência ao usar o sistema para cada par de adjetivos que seguem.</p>
+                    </blockquote>
 
                     
                     <label class="statement">Você considera o sistema mais perto de:</label>
+
+                    
 
                     <ul class='likert'>
 
@@ -1131,10 +1313,10 @@
 
 
                    
-                    <div class="buttons">
-                        <button class="clear">Clear</button>
-                        <button class="submit">Submit</button>
-                    </div>
+                    
+                        
+                        <button class="submit btn btn-primary ml-5 btn-lg">Enviar</button>
+                    
                 </form>
             </div>
 
@@ -1146,29 +1328,13 @@
 
 
 </body>
-<footer style="background-color: #d1c4be">
-    <div class="container">
-        <div class="row m-auto pt-4">
-            <div class="col-md-6">
-                <ul style="list-style: none;">
-                    <li>
-                        <h5>Contato</h3>
-                    </li>
-                    <li><a href="">E-mail</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-6">
-                <ul style="list-style: none;">
-                    <li>
-                        <h5>Endereço</h3>
-                    </li>
-                    <li><a href="">E-mail</a></li>
-                </ul>
-            </div>
-        </div>
-
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2021 Suzane Santos dos Santos
+  
     </div>
+    <!-- Copyright -->
 </footer>
 
 <!-- Optional JavaScript -->
@@ -1182,6 +1348,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-</body>
+
 
 </html>

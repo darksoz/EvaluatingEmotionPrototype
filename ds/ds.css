@@ -15,9 +15,11 @@
     font-weight: bold;
     padding: 30px 0 1rem 4.256%;
     margin-bottom:10px;
-    border-bottom:2px solid #efefef;
+    
 
   }
+
+  
   form .likert {
     list-style:none;
     width:100%;
@@ -33,7 +35,7 @@
     top:11px;
     left:13%;
     display:block;
-    background-color:#efefef;
+    background-color:grey;
     height:4px;
     width:65%;
   }
