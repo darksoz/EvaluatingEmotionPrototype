@@ -37,3 +37,7 @@ body {
         padding: 1rem;
 
       }
+
+      input[type=radio]{
+        transform:scale(1.5);
+      }
