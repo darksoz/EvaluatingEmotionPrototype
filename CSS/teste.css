@@ -1,9 +1,10 @@
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
-    color: #fff;
+    color: #3b3735;
     height: 100%;
-    background-color: #357fa4;
+    font-size: 1em;
+  ;
   }
   h2 {
     font-size: 24px;
@@ -20,12 +21,13 @@ body {
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: #357fa4;
-    color: #fff;
-    padding: 20rem 25px;
+    background-color: #fff;
+    color: #3b3735;
+    padding: 15rem 25px;
     font-family: Montserrat, sans-serif;
     width: 100%;
     height: 100%;
+    font-size: 1.2em;
   }
   
   .bg-grey {
@@ -74,6 +76,6 @@ body {
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
-    color: #357fa4;
+    
   }
   
