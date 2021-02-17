@@ -1,147 +1,68 @@
-<!doctype html>
-<html lang="pt-br">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="CSS/teste.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="contraste.js"></script>
+  <script src="fontsize.js"></script>
+  <link rel="stylesheet" href="CSS/contraste.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/estilo.css">
-    <script src="contraste.js"></script>
-    <link rel="stylesheet" href="CSS/contraste.css">
-
-    <script src="../contraste.js"></script>
-    <script src="fontsize.js"></script>
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
-    <title>Protótipos</title>
 </head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<body>
-    <header>
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarExample01">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
 
-                    <a class="navbar-brand" href="#myPage"><img id="logo" src="imagens/logo2.png" width="150" alt="Logo do Site: HERMOSA Makeup">
-                    </a>
-                  </div>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item active"><a class="nav-link btn btn-outline-dark mr-1 btnav" id="increase-font"> <span class="fas fa-plus-circle fa-lg"></span> Aumentar
+            Fonte</a></li>
+        <li class="nav-item active"><a class="nav-link btn btn-outline-dark mr-1 btnav" href="#menu" id="decrease-font"
+            onclick="window.Font()"> <span class="fas fa-minus-circle fa-lg btnav"></span> Diminuir Fonte</a></li>
+        <li class="nav-item active"><a class="nav-link btn btn-outline-dark mr-1 btnav" href="#altocontraste" id="altocontraste"
+            onclick="window.toggleContrast()" onkeydown="window.toggleContrast()"><span
+              class="fas fa-adjust fa-lg"></span> Contraste</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+<div class="comtainer"> 
 
-                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
-                                onclick="window.Font('aumentar')" accesskey="1" id="increase-font"> <span
-                                    class="fas fa-plus-circle fa-lg"></span>
-                                Aumentar
-                                Fonte</a></li>
-                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav" accesskey="2"
-                                id="decrease-font" onclick="window.Font('diminuir')"> <span
-                                    class="fas fa-minus-circle fa-lg btnav"></span> Diminuir Fonte</a></li>
-                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
-                                href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
-                                onkeydown="window.toggleContrast()"><span class="fas fa-adjust fa-lg"></span>
-                                Contraste</a></li>
-
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Navbar -->
+    <div class="jumbotron text-center">
+        <h1>EMOFRAME</h1> 
+        <p>Frameword de Instrumentos de Avaliação de Respostas Emocionais</p> 
+        <button class="btn btn-primary btn-lg" style="background-color: #ed8202;" onclick="window.location.href='telainicial/entrar.html'">Entrar</button>
+        <button class="btn btn-primary btn-lg" style="background-color: #ed8202; onclick="window.location.href='telainicial/cadastrar.html'">Cadastrar</button>
+      </div>
 
 
+      
 
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="telainicial/welcome.html">Página Inicial</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Ferramentas</li>
-            </ol>
-        </nav>
+</div>
 
-        <div class="container">
 
-            <div class="row m-3">
-                <div class="col-sm">
-                    <div class="card cardBtn acessibilidade" style="width: 18rem;"
-                        onclick="window.location.href='sus/sus.html'">
-                        <img class="card-img-top" src="imagens/SUS.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Suzane some quick example text to build on the card title and make up
-                                the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='gds/gds.html'">
-                        <img class="card-img-top" src="imagens/GDS.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='poms/poms.html'">
-                        <img class="card-img-top" src="imagens/POMS.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="row m-3">
-                <div class="col-sm">
-                    <div class="card cardBtn" class="erick" style="width: 18rem;"
-                        onclick="window.location.href='ds/ds.html'">
-                        <img class="card-img-top" src="imagens/DS.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text"> Oi Some quick example text to build on the card title and make up the
-                                bulk of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='whoqol/whoqol.html'">
-                        <img class="card-img-top" src="imagens/WHOQOL.png" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='sam/sam.html'">
-                        <img class="card-img-top" src="imagens/SAM.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-</body>
 
-<footer class="bg-light text-center text-lg-start">
+<footer class="text-center text-lg-start fixed-bottom" style="background-color: #357fa4;">
     <!-- Copyright -->
     <div class="text-center p-3">
         © 2021 Suzane Santos dos Santos
@@ -150,17 +71,42 @@
     <!-- Copyright -->
 </footer>
 
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+      // Store hash
+      var hash = this.hash;
 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
 </html>
