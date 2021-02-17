@@ -68,9 +68,6 @@
 
 
 
-  <button type="button" class="btn btn-primary modal-intrucoes" data-toggle="modal" data-target="#exampleModalLong">
-    Instruções
-  </button>
 
   <div class="container">
 
@@ -81,7 +78,71 @@
 
       <div class="wrap">
         <h1 class="likert-header-whoqol">WHOQOL</h1>
+        <blockquote class="blockquote">
+          <p class="lead ml-5 p-3">Este questionário é sobre como você se sente a respeito de sua qualidade de vida, saúde e outras áreas de sua vida. Por favor, responda a todas as questões . Se você não tem certeza sobre que resposta dar em uma questão, por favor, escolha entre as alternativas a que lhe parece mais apropriada. Esta, muitas vezes, poderá ser sua primeira escolha. 
+          </p>
+          <p class="lead ml-5 p-3">Por favor, tenha em mente seus valores, aspirações, prazeres e preocupações. Nós estamos perguntando o que você acha de sua vida, tomando como referência as duas últimas semanas. Por exemplo, pensando nas últimas duas semanas, uma questão poderia ser: </p>
+          </blockquote>  
         <form action="">
+
+          <label class="statement-whoqol"> Exemplo - Você recebe dos outros o apoio de que 
+            necessita?
+            </label>
+          <ul class='likert-whoqol'>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Nada</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Muito pouco</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Médio</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="disagree">
+              <label>Muito</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Completamente</label>
+            </li>
+
+            <p class="lead ml-5 p-3 mt-2">Você deve selecionar a palavra que melhor corresponde ao quanto você recebe dos outros o apoio de que necessita nestas últimas duas semanas. Portanto, você deve deve selecionar a palavra "muito" se você recebeu "muito" apoio como abaixo.</p>
+          </ul>
+
+          <label class="statement-whoqol"> Exemplo - Você recebe dos outros o apoio de que 
+            necessita?
+            </label>
+          <ul class='likert-whoqol'>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Nada</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Muito pouco</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Médio</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="disagree" checked>
+              <label>Muito</label>
+            </li>
+            <li>
+              <input type="radio" name="likert1" value="strong_agree">
+              <label>Completamente</label>
+            </li>
+
+            <p class="lead ml-5 p-3 mt-2">Você deve selecionar a palavra "nada" se você não recebeu "nada" de apoio.
+            </p>
+          </ul>
+
+         <h4 class="p-4"> Por favor, leia cada questão, veja o que você acha e selecione a palavra que lhe parece a melhor resposta. </h4>
 
           <label class="statement-whoqol">1. Como você avaliaria sua qualidade de vida?</label>
           <ul class='likert-whoqol'>
@@ -748,28 +809,8 @@
 
 
 
-          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLongTitle">Instruções</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  Olá aqui é o model contendo as instruções do teste.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-            <button class="submit btn btn-primary btn-lg"> Enviar</button>
+          
+          <button type="button" class="btn btn-primary btn-lg btn-block">Enviar</button>
 
         
         </form>
