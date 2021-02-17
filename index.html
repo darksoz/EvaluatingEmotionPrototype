@@ -33,14 +33,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarExample01">
 
+                    <a class="navbar-brand" href="#myPage"><img id="logo" src="imagens/logo2.png" width="150" alt="Logo do Site: HERMOSA Makeup">
+                    </a>
+                  </div>
+
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
 
-                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav" onclick="window.Font('aumentar')"
-                                accesskey="1" id="increase-font"> <span class="fas fa-plus-circle fa-lg"></span>
+                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
+                                onclick="window.Font('aumentar')" accesskey="1" id="increase-font"> <span
+                                    class="fas fa-plus-circle fa-lg"></span>
                                 Aumentar
                                 Fonte</a></li>
-                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
-                                accesskey="2" id="decrease-font" onclick="window.Font('diminuir')"> <span
+                        <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav" accesskey="2"
+                                id="decrease-font" onclick="window.Font('diminuir')"> <span
                                     class="fas fa-minus-circle fa-lg btnav"></span> Diminuir Fonte</a></li>
                         <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
                                 href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
@@ -68,7 +73,8 @@
 
             <div class="row m-3">
                 <div class="col-sm">
-                    <div class="card cardBtn acessibilidade" style="width: 18rem;" onclick="window.location.href='sus/sus.html'">
+                    <div class="card cardBtn acessibilidade" style="width: 18rem;"
+                        onclick="window.location.href='sus/sus.html'">
                         <img class="card-img-top" src="imagens/SUS.png" alt="Card image cap">
                         <div class="card-body">
                             <p class="card-text">Suzane some quick example text to build on the card title and make up
@@ -156,21 +162,5 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
-<script>
-    function fonte(e) {
-        
-        var elemento = $(".acessibilidade");
-        var fonte = elemento.css('font-size');
-        if (e == 'a') {
-            elemento.css("fontSize", parseInt(fonte) + 10);
-            alert("Aumentou");
-        } else if ('d') {
-            alert("Diminuiu");
-            elemento.css("fontSize", parseInt(fonte) - 10);
-        }
-    }
-</script>
-
 
 </html>
