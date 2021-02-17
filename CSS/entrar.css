@@ -282,3 +282,19 @@ html {
     width:60%;
   }
   
+  .navbar {
+
+    background-color: #357fa4;
+  
+    font-size: 16px !important;
+  
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+
+ 
+
+ 
+ 

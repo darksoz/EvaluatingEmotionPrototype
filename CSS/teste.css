@@ -4,7 +4,7 @@ body {
     color: #3b3735;
     height: 100%;
     font-size: 1em;
-  ;
+  
   }
   h2 {
     font-size: 24px;
@@ -30,52 +30,23 @@ body {
     font-size: 1.2em;
   }
   
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #357fa4;
-    font-size: 50px;
-  }
-  .logo {
-    color: #8FD8D8;
-    font-size: 200px;
-  }
 
-  .navbar {
-    margin-bottom: 0;
-    background-color: #357fa4;
-    ;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover{
-    color: #8FD8D8!important;
-    background-color: #fff !important;  
-  } 
-  .navbar-nav li.active a {
-    background-color: #8FD8D8 !important; 
-  }
 
-  .navbar-nav li.active a:hover {
-    color: #8FD8D8!important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
+  
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
     
   }
+
+  .navbar {
+
+    background-color: #357fa4;
   
+    font-size: 16px !important;
+  
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
