@@ -71,14 +71,14 @@
     <div class="container"></div>
 
     <h1 class="likert-header">GDS — Escala de Depressão Geriátrica</h1>
-    <form name="myform">
+    <form name="myform" action="resultado.html">
 
 
             <div class="ml-sm-5 mr-sm-5 mt-2 mb-2 gdsdiv">
                 <label for="exampleFormControlInput1" class="form-label"><b>1. Está satisfeito (a) com sua
                         vida?</b></label><br />
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="gds1" id="gds1-1" value="Não">
+                    <input class="form-check-input" type="radio" name="gds1" id="gds1-1" value="Não" required>
                     <label class="form-check-label" for="inlineRadio1">Não</label>
                 </div>
                 <div class="form-check form-check-inline">
@@ -273,8 +273,7 @@
                 </div>
             </div>
 
-            <button type="submit" class=" ml-sm-5 mr-sm-5 mt-2 btn btn-primary btn-lg pb-2"
-             onclick="displayRadioValue()">Enviar</button>
+            <button type="submit" class=" ml-sm-5 mr-sm-5 mt-2 btn btn-primary btn-lg pb-2">Enviar</button>
     </form>
     </div>
     </div>
