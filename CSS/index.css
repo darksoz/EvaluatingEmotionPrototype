@@ -14,10 +14,10 @@ body {
  .whitebutton{
      background-color: white;
      color: black;
-     border: 1px #8edfff solid;
+     border: 1px #00bfa5 solid;
  }
 
  .whitebutton:hover {
-     background-color: #8edfff;
+     background-color: #00bfa5;;
  }
 
