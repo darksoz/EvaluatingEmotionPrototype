@@ -1,14 +1,12 @@
 
 /* BASIC */
+{
+  font-family: Montserrat, sans-serif;
+  color: #3b3735;
+  font-size: 1em;
+}
 
-html {
-    background-color: #56baed;
-  }
-  
-  body {
-    font-family: "Poppins", sans-serif;
-    height: 100vh;
-  }
+
   
   a {
     color: #92badd;
@@ -38,7 +36,7 @@ html {
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 40px;
+    padding: 10px;
   }
   
   #formContent {
@@ -82,9 +80,9 @@ html {
   /* FORM TYPOGRAPHY*/
   
   input[type=button], input[type=submit], input[type=reset]  {
-    background-color: #56baed;
+    background-color: #8edfff;
     border: none;
-    color: white;
+    color: black;
     padding: 15px 80px;
     text-align: center;
     text-decoration: none;
@@ -269,30 +267,36 @@ html {
   .underlineHover:hover:after{
     width: 100%;
   }
-  
-  
-  
-  /* OTHERS */
-  
-  *:focus {
-      outline: none;
-  } 
-  
-  #icon {
-    width:60%;
-  }
-  
-  .navbar {
 
-    background-color: #357fa4;
+  .whitebutton{
+    background-color: white;
+    color: black;
+    border: 1px #8edfff solid;
+}
+
+.whitebutton:hover {
+    background-color: #8edfff;
+}
   
-    font-size: 16px !important;
+
+
+.or-container {
+  align-items: center;
+  color: #ccc;
+  display: flex;
+  margin: 25px 0
+}
+
+.line-separator {
+  background-color: #ccc;
+  flex-grow: 5;
+  height: 1px
+}
   
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
+  
+
+  
+
 
  
 
