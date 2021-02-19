@@ -1,3 +1,20 @@
+body {
+  font-family: Montserrat, sans-serif;
+  color: #3b3735;
+  font-size: 1em;
+}
+
+a {
+  color: #00bfa5;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.h5 {
+  margin-right: 1rem;
+}
+
 .wrap {
     font:12px Arial, san-serif;
   }
@@ -33,11 +50,11 @@
     content: '';
     position:relative;
     top:11px;
-    left:13%;
+    left:15%;
     display:block;
     background-color:grey;
     height:4px;
-    width:65%;
+    width:62%;
   }
   form .likert li {
     display:inline-block;
@@ -53,7 +70,11 @@
     margin-left:-6px;
     
   }
-  form .likert li label {width:100%;}
+  form .likert li label {
+    width:100%;
+    margin-top: 1rem;
+    font-size: 2em;
+  }
   form .buttons {
     margin:30px 0;
     padding:0 4.25%;
@@ -73,3 +94,17 @@
   .option {
     font-weight: bolder;
   }
+
+  .whitebutton{
+    background-color: #00bfa5;
+    color: black;
+    border: 1px #00bfa5 solid;
+}
+
+.whitebutton:hover {
+    background-color: grey;
+}
+
+input[type=radio]{
+  transform:scale(1.3);
+}

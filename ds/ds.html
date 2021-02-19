@@ -1,73 +1,66 @@
 <!doctype html>
 <html lang="pt-br">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/estilo.css">
-    <link rel="stylesheet" href="ds.css">
-    <script src="contraste.js"></script>
-    <link rel="stylesheet" href="../CSS/contraste.css">
-
-    <script src="../contraste.js"></script>
-    <script src="../fontsize.js"></script>
-
-    <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
-
-    <title>DS</title>
-</head>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    
+    
+           <!-- Font Awesome -->
+           <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="ds.css">
+        <script src="../contraste.js"></script>
+        <script src="../fontsize.js"></script>
+    
+    
+        <title>DS</title>
+      </head>
 
 <body>
     <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-            data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-
-                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav" onclick="window.Font('aumentar')"
-                        accesskey="1" id="increase-font"> <span class="fas fa-plus-circle fa-lg"></span>
-                        Aumentar
-                        Fonte</a></li>
-                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
-                        accesskey="2" id="decrease-font" onclick="window.Font('diminuir')"> <span
-                            class="fas fa-minus-circle fa-lg btnav"></span> Diminuir Fonte</a></li>
-                <li class="nav-item active"><a class="nav-link btn btn-outline-light mr-1 btnav"
-                        href="#altocontraste" id="altocontraste" accesskey="3" onclick="window.toggleContrast()"
-                        onkeydown="window.toggleContrast()"><span class="fas fa-adjust fa-lg"></span>
-                        Contraste</a></li>
-
-
-
-            </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bfa5;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+              <img src="../imagens/emoframe.png"  width="50"alt="logo emoframe">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="nav ms-auto">
+    
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-universal-access fa-lg"></span> Acessibilidade</a>
+                  <ul class="dropdown-menu">
+                    <li onclick="window.Font('aumentar')"><a class="dropdown-item">Aumentar fonte <span class="fas fa-plus-circle fa-lg"></span></a></li>
+                    <li onclick="window.Font('diminuir')"><a class="dropdown-item">Diminuir fonte <span class="fas fa-minus-circle fa-lg"></span></a></li>
+                    <li><a class="dropdown-item" onkeydown="window.toggleContrast()">Contraste <span class="fas fa-adjust fa-lg"></span></a></li>
+                  </ul>
+                </li>
+              </ul>
+          </div>
         </div>
-    </div>
-</nav>
-<!-- Navbar -->
-
-
-
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="..5/telainicial/welcome.html">Página Inicial</a></li>
-        <li class="breadcrumb-item"><a href="../index.html">Ferramentas</a></li>
-        <li class="breadcrumb-item active" aria-current="page">DS</li>
-    </ol>
-</nav>
+      </nav>
+    
+     
+        
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb p-2">
+            <li class="breadcrumb-item"><a href="../index.html">Página Inicial</a></li>
+            <li class="breadcrumb-item"><a href="../ferramentas.html">Ferramentas</a></li>
+            <li class="breadcrumb-item active" aria-current="page">DS</li>
+          </ol>
+        </nav>
+    
 
     <div class="container">
 
-    </div>
+    
 
     <div class="row">
         <div class="col md-2">
@@ -85,131 +78,132 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Útil</h3>
+                            <h5>Útil</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree" checked>
+                            <input type="radio" name="likertex1" value="strong_agree" checked>
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex1" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex1" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likertex1" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex1" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex1" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex1" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Inútil</h3>
+                            <h5>Inútil</h5>
                         </li>
                         <p class = "h5 mt-4">Nesse caso, a pessoa considerou que o sistema foi útil, pois marcou uma opção mais próxima do adjetivo “útil”.</p>
                     </ul>
 
-                    
+                </form>
                    
-
+                <form>
                     <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 2.</p>
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Útil</h3>
+                            <h5>Útil</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex2" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex2" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex2" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likertex2" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex2" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree" checked>
+                            <input type="radio" name="likertex2" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex2" value="strong_agree" checked>
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Inútil</h3>
+                            <h5>Inútil</h5>
                         </li>
                         <p class = "h5 mt-4">Já nesse caso, a pessoa considerou o sistema como pouco útil, uma vez que marcou uma opção mais próxima do adjetivo “inútil”.
                         </p>
                     </ul>
-
+                </form>
+                    <form>
                     <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 3.</p>
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Útil</h3>
+                            <h5>Útil</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree" checked>
+                            <input type="radio" name="likertex3" value="disagree" checked>
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likertex3" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Inútil</h3>
+                            <h5>Inútil</h5>
                         </li>
                         <p class = "h5 mt-4">Neste último exemplo, a pessoa apresentou uma avaliação neutra do sistema, pois selecionou uma opção igualmente distante de “útil” ou “inútil”. 
                         </p>
@@ -234,41 +228,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Irritante</h3>
+                            <h5>Irritante</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert1" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert1" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Deleitável</h3>
+                            <h5>Deleitável</h5>
                         </li>
                     </ul>
 
@@ -277,41 +271,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Incomprrensível</h3>
+                            <h5>Incomprrensível</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert2" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert2" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5> Compreensível </h3>
+                            <h5> Compreensível </h5>
                         </li>
                     </ul>
 
@@ -320,41 +314,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Criativo</h3>
+                            <h5>Criativo</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert3" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert3" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Não criativo</h3>
+                            <h5>Não criativo</h5>
                         </li>
                     </ul>
 
@@ -363,41 +357,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Fácil de aprender</h3>
+                            <h5>Fácil de aprender</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert4" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert4" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Díficil de aprender</h3>
+                            <h5>Díficil de aprender</h5>
                         </li>
                     </ul>
 
@@ -406,41 +400,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Valioso</h3>
+                            <h5>Valioso</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert5" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert5" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Sem valor</h3>
+                            <h5>Sem valor</h5>
                         </li>
                     </ul>
 
@@ -449,41 +443,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Tedioso</h3>
+                            <h5>Tedioso</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert6" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert6" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Excitante</h3>
+                            <h5>Excitante</h5>
                         </li>
                     </ul>
 
@@ -492,41 +486,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Desinteressante</h3>
+                            <h5>Desinteressante</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert7" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert7" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Interessante</h3>
+                            <h5>Interessante</h5>
                         </li>
                     </ul>
 
@@ -535,41 +529,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Rápido</h3>
+                            <h5>Rápido</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert8" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert8" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Lento</h3>
+                            <h5>Lento</h5>
                         </li>
                     </ul>
 
@@ -578,41 +572,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Inventivo</h3>
+                            <h5>Inventivo</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert9" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Concencional</h3>
+                            <h5>Concencional</h5>
                         </li>
                     </ul>
 
@@ -621,41 +615,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Obstrutivo</h3>
+                            <h5>Obstrutivo</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert10" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert10" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Condutor</h3>
+                            <h5>Condutor</h5>
                         </li>
                     </ul>
 
@@ -664,41 +658,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Bom</h3>
+                            <h5>Bom</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert11" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert11" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Ruim</h3>
+                            <h5>Ruim</h5>
                         </li>
                     </ul>
 
@@ -707,41 +701,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Complicado</h3>
+                            <h5>Complicado</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert12" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert12" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Fácil</h3>
+                            <h5>Fácil</h5>
                         </li>
                     </ul>
 
@@ -750,41 +744,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Desprazeroso</h3>
+                            <h5>Desprazeroso</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert13" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert13" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Prazeroso</h3>
+                            <h5>Prazeroso</h5>
                         </li>
                     </ul>
 
@@ -793,41 +787,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Comum</h3>
+                            <h5>Comum</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert14" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert14" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Pioneiro</h3>
+                            <h5>Pioneiro</h5>
                         </li>
                     </ul>
 
@@ -836,41 +830,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Desagradável</h3>
+                            <h5>Desagradável</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert15" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert15" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Agradável</h3>
+                            <h5>Agradável</h5>
                         </li>
                     </ul>
 
@@ -879,41 +873,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Confiável</h3>
+                            <h5>Confiável</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert16" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert16" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Duvidoso</h3>
+                            <h5>Duvidoso</h5>
                         </li>
                     </ul>
 
@@ -922,41 +916,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Motivante</h3>
+                            <h5>Motivante</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert17" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert17" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Desmotivante</h3>
+                            <h5>Desmotivante</h5>
                         </li>
                     </ul>
 
@@ -965,41 +959,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Atende às expectativas</h3>
+                            <h5>Atende às expectativas</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert18" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert18" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Não atende às expectativas</h3>
+                            <h5>Não atende às expectativas</h5>
                         </li>
                     </ul>
 
@@ -1008,41 +1002,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Ineficiente</h3>
+                            <h5>Ineficiente</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert19" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert19" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert9" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert19" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert19" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert19" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert19" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Eficiente</h3>
+                            <h5>Eficiente</h5>
                         </li>
                     </ul>
 
@@ -1051,41 +1045,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Claro</h3>
+                            <h5>Claro</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert20" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert20" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Confuso</h3>
+                            <h5>Confuso</h5>
                         </li>
                     </ul>
 
@@ -1094,41 +1088,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Intrincado</h3>
+                            <h5>Intrincado</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert21" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert21" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Prático</h3>
+                            <h5>Prático</h5>
                         </li>
                     </ul>
 
@@ -1137,41 +1131,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Organizado</h3>
+                            <h5>Organizado</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert22" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert22" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Desorganizado</h3>
+                            <h5>Desorganizado</h5>
                         </li>
                     </ul>
 
@@ -1180,41 +1174,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Atraente</h3>
+                            <h5>Atraente</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert23" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert23" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Feio</h3>
+                            <h5>Feio</h5>
                         </li>
                     </ul>
 
@@ -1223,41 +1217,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Intuitivo</h3>
+                            <h5>Intuitivo</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert24" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert24" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Não intuitivo</h3>
+                            <h5>Não intuitivo</h5>
                         </li>
                     </ul>
 
@@ -1266,41 +1260,41 @@
                     <ul class='likert'>
 
                         <li style="font-weight: bold;">
-                            <h5>Conservador</h3>
+                            <h5>Conservador</h5>
                         </li>
 
                         <li>
 
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>1</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="disagree">
+                            <input type="radio" name="likert25" value="disagree">
                             <label>4</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert25" value="strong_agree">
                             <label>7</label>
                         </li>
 
                         <li style="font-weight: bold;">
-                            <h5>Inovador</h3>
+                            <h5>Inovador</h5>
                         </li>
                     </ul>
 
@@ -1315,8 +1309,9 @@
                    
                     
                         
-                        <button class="submit btn btn-primary ml-5 btn-lg">Enviar</button>
-                    
+                    <div class="mr-auto">
+                        <button type="button" class="btn btn-lg whitebutton">Enviar</button>
+                      </div>                       
                 </form>
             </div>
 
@@ -1324,6 +1319,7 @@
     </div>
 
     </div>
+</div>
 
 
 
@@ -1337,17 +1333,17 @@
     <!-- Copyright -->
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
 
 
 </html>
