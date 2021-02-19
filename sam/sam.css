@@ -1,9 +1,14 @@
-.modal-intrucoes{
-    float: right;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    font-size: 20px;
+body {
+  font-family: Montserrat, sans-serif;
+  color: #3b3735;
+  font-size: 1em;
+}
+
+a {
+  color: #00bfa5;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 [type=radio] { 
@@ -46,15 +51,15 @@
     content: '';
     position:relative;
     top:11px;
-    left:9.5%;
+    left:5%;
     display:block;
     background-color:#efefef;
     height:4px;
-    width:78%;
+    width:83%;
   }
   form .likert li {
     display:inline-block;
-    width:19%;
+    width:10%;
     text-align:center;
     vertical-align: top;
   }
@@ -67,18 +72,16 @@
     
   }
   form .likert li label {width:100%;}
-  form .buttons {
-    margin:30px 0;
-    padding:0 4.25%;
-    text-align:right
-  } 
-  form .buttons button {
-    padding: 5px 10px;
-    background-color: #67ab49;
-    border: 0;
-    border-radius: 3px;
+
+  input[type=radio]{
+    transform:scale(1.1);
   }
-  form .buttons .clear {background-color: #e9e9e9;}
-  form .buttons .submit {background-color: #67ab49;} 
-  form .buttons .clear:hover {background-color: #ccc;}
-  form .buttons .submit:hover {background-color: #14892c;}  
+  .whitebutton{
+    background-color: #00bfa5;
+    color: black;
+    border: 1px #00bfa5 solid;
+}
+
+.whitebutton:hover {
+    background-color: grey;
+}
