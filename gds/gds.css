@@ -1,6 +1,14 @@
 body {
-    font-family: sans-serif;
-    background-color: #DCDCDC;
+  font-family: Montserrat, sans-serif;
+  color: #3b3735;
+  font-size: 1em;
+}
+
+a {
+  color: #00bfa5;
+  display:inline-block;
+  text-decoration: none;
+  font-weight: 400;
 }
 
 .modal-intrucoes{
@@ -71,3 +79,13 @@ body {
       .score{
         text-align: center;
       }
+
+      .whitebutton{
+        background-color: #00bfa5;
+        color: black;
+        border: 1px #00bfa5 solid;
+    }
+    
+    .whitebutton:hover {
+        background-color: grey;
+    }
