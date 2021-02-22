@@ -18,7 +18,7 @@
         <script src="../fontsize.js"></script>
     
     
-        <title>GDS</title>
+        <title>POMS</title>
       </head>
 
 <body>
@@ -64,8 +64,109 @@
         <div class="col md-2">
 
             <div class="wrap">
-                <h1 class="likert-header">POMS</h1>
+                <h1 class="likert-header">POMS — Perfil dos Estados de Humor</h1>
+                <blockquote class="blockquote">
+                    <p class="lead ml-5 p-3"> São apresentadas abaixo uma série de palavras que descrevem sensações que as pessoas sentem no dia a dia. Leia primeiro cada palavra com cuidado. 
+                        Depois selecione a palavra que melhor corresponda a forma que você tem se sentido ao longo dos últimos sete dias, incluindo o dia de hoje. Veja os exemplos:
+                    </p>
+                </blockquote>
+
                 <form action="">
+                    <label class="statement">Exemplo 1. Confiante</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likerte1" value="zero" checked>
+                            <label>Nada</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte1" value="one">
+                            <label>Um Pouco</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte1" value="two">
+                            <label>Moderadamente</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte1" value="three">
+                            <label>Bastante</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte1" value="four">
+                            <label>Muitíssimo</label>
+                        </li>
+
+                        <p class="h5 mt-4">Nesse caso, a pessoa considerou que não se sentiu nada confiante durante a última semana, pois marcou a
+                            opção "nada" em relaçao a palavra "confiante".</p>
+                    </ul>
+                </form>
+
+                <form action="">
+                    <label class="statement">Exemplo 2. Confiante</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likerte2" value="zero">
+                            <label>Nada</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte2" value="one">
+                            <label>Um Pouco</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte2" value="two" checked>
+                            <label>Moderadamente</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte2" value="three">
+                            <label>Bastante</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte2" value="four">
+                            <label>Muitíssimo</label>
+                        </li>
+
+                        <p class="h5 mt-4">Neste segundo exemplo, a pessoa apresentou uma resposta neutra sobre o quão confiante tem se sentido durante a última semana, 
+                            pois selecionou uma opção igualmente distante de “Nada” ou “Muitíssimo”.</p>
+                    </ul>
+                </form>
+
+                <form action="">
+                    <label class="statement">Exemplo 3. Confiante</label>
+                    <ul class='likert'>
+                        <li>
+                            <input type="radio" name="likerte3" value="zero">
+                            <label>Nada</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte3" value="one">
+                            <label>Um Pouco</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte3" value="two">
+                            <label>Moderadamente</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte3" value="three">
+                            <label>Bastante</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="likerte3" value="four" checked > 
+                            <label>Muitíssimo</label>
+                        </li>
+
+                        <p class="h5 mt-4">Já nesse caso, a pessoa considerou que se sentiu muitíssimo confiente, uma vez que
+                            marcou a opção "Muitíssimo" em relação a palavra confiante.</p>
+                    </ul>
+                </form>
+
+ <hr>
+
+
+
+                <form action="">
+
+                    <blockquote class="blockquote">
+                        <p class="lead ml-5 p-3"> Baseado nesse modelo de respostas selecione a palavra que melhor corresponda a forma que você tem se sentido ao longo dos últimos sete dias, para cada um dos adjetivos abaixo.</p>
+                    </blockquote>
 
                     <label class="statement">1. Tenso</label>
                     <ul class='likert'>
@@ -1051,7 +1152,7 @@
                         </li>
                     </ul>
 
-                    <label class="statement">42. Inseguro</label>
+                    <label class="statement">42. Apático</label>
                     <ul class='likert'>
                         <li>
                             <input type="radio" name="likert42" value="zero">
