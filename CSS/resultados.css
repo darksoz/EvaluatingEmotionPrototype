@@ -1,0 +1,78 @@
+
+    body{
+        font-family: Montserrat, sans-serif;
+        color: #3b3735;
+        font-size: 1em;
+      }
+
+        
+  a {
+    color: #00bfa5;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+      
+    .btn {
+        margin-bottom: 5px;
+    }
+    
+    .grid {
+        position: relative;
+        width: 100%;
+        background: #fff;
+        color: #666666;
+        border-radius: 2px;
+        margin-bottom: 25px;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .grid .grid-body {
+        padding: 15px 20px 15px 20px;
+        font-size: 0.9em;
+        line-height: 1.9em;
+    }
+    
+    .search table tr td.rate {
+        color: #00bfa5;
+        line-height: 50px;
+    }
+    
+    .search table tr:hover {
+        cursor: pointer;
+    }
+    
+    .search table tr td.image {
+        width: 50px;
+    }
+    
+    .search table tr td img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .search table tr td.rate {
+        color: #00bfa5;
+        line-height: 50px;
+    }
+    
+    .search table tr td.price {
+        font-size: 1.5em;
+        line-height: 50px;
+    }
+    
+    .search #price1,
+    .search #price2 {
+        display: inline;
+        font-weight: 600;
+    }
+
+    .whitebutton{
+        background-color: white;
+        color: black;
+        border: 1px #00bfa5 solid;
+    }
+   
+    .whitebutton:hover {
+        background-color: #00bfa5;;
+    }
