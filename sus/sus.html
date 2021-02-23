@@ -1,75 +1,85 @@
 <!doctype html>
 <html lang="pt-br">
 
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 
 
-       <!-- Font Awesome -->
-       <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="sus.css">
-    <script src="../contraste.js"></script>
-    <script src="../fontsize.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="sus.css">
+  <script src="../contraste.js"></script>
+  <script src="../fontsize.js"></script>
 
 
-    <title>SUS</title>
-  </head>
+  <title>SUS</title>
+</head>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bfa5;">
     <div class="container">
       <a class="navbar-brand" href="#">
-          <img src="../imagens/emoframe.png"  width="50"alt="logo emoframe">
+        <img src="../imagens/emoframe.png" width="50" alt="logo emoframe">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
         <ul class="nav ms-auto">
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-universal-access fa-lg"></span> Acessibilidade</a>
-              <ul class="dropdown-menu">
-                <li onclick="window.Font('aumentar')"><a class="dropdown-item">Aumentar fonte <span class="fas fa-plus-circle fa-lg"></span></a></li>
-                <li onclick="window.Font('diminuir')"><a class="dropdown-item">Diminuir fonte <span class="fas fa-minus-circle fa-lg"></span></a></li>
-                <li><a class="dropdown-item" onkeydown="window.toggleContrast()">Contraste <span class="fas fa-adjust fa-lg"></span></a></li>
-              </ul>
-            </li>
-          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false"><span class="fas fa-universal-access fa-lg"></span> Acessibilidade</a>
+            <ul class="dropdown-menu">
+              <li onclick="window.Font('aumentar')"><a class="dropdown-item">Aumentar fonte <span
+                    class="fas fa-plus-circle fa-lg"></span></a></li>
+              <li onclick="window.Font('diminuir')"><a class="dropdown-item">Diminuir fonte <span
+                    class="fas fa-minus-circle fa-lg"></span></a></li>
+              <li><a class="dropdown-item" onkeydown="window.toggleContrast()">Contraste <span
+                    class="fas fa-adjust fa-lg"></span></a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
 
- 
-    
-    <nav aria-label="breadcrumb">
-      <ol class="breadcrumb p-2">
-        <li class="breadcrumb-item"><a href="../index.html">Página Inicial</a></li>
-        <li class="breadcrumb-item"><a href="../ferramentas.html">Ferramentas</a></li>
-        <li class="breadcrumb-item active" aria-current="page">SUS</li>
-      </ol>
-    </nav>
+
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb p-2">
+      <li class="breadcrumb-item"><a href="../index.html">Página Inicial</a></li>
+      <li class="breadcrumb-item"><a href="../ferramentas.html">Ferramentas</a></li>
+      <li class="breadcrumb-item active" aria-current="page">SUS</li>
+    </ol>
+  </nav>
 
 
 
   <div class="container">
-          
-    
+
+
 
     <div class="row">
       <div class="col md-2">
 
         <div class="wrap">
-          <h1 class="likert-header">SUS — System Usability Scale</h1>
+          <h1 class="likert-header">SUS — Escala de Usabilidade do Sistema</h1>
+          <blockquote class="blockquote">
+            <p class="lead ml-5 p-3"> Para cada uma das seguintes afirmações, selecione a opção que melhor descreve suas reações ao sistema hoje.
+            </p>
+        </blockquote>
           <form action="resultado.html">
-            
-              <label class="statement">1. Eu achei fácil inserir dados neste aplicativo.</label>
+
+            <label class="statement">1. Eu achei fácil inserir dados neste aplicativo.</label>
             <ul class='likert'>
               <li>
                 <input type="radio" name="likert1" value="strong_agree">
@@ -92,9 +102,9 @@
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
-            
 
-          
+
+
             <label class="statement">2. Quando eu cometo um erro é fácil de corrigi-lo.</label>
             <ul class='likert'>
               <li>
@@ -307,7 +317,8 @@
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
-            <label class="statement">11. Eu achei o aplicativo consistente. Por exemplo, todas as funções podem ser realizadas de uma maneira semelhante.</label>
+            <label class="statement">11. Eu achei o aplicativo consistente. Por exemplo, todas as funções podem ser
+              realizadas de uma maneira semelhante.</label>
             <ul class='likert'>
               <li>
                 <input type="radio" name="likert11" value="strong_agree">
@@ -379,7 +390,8 @@
               </li>
             </ul>
 
-            <label class="statement">14. A organização dos menus e comandos de ação (como botões e links) é lógica, permitindo encontrá-los facilmente na tela.</label>
+            <label class="statement">14. A organização dos menus e comandos de ação (como botões e links) é lógica,
+              permitindo encontrá-los facilmente na tela.</label>
             <ul class='likert'>
               <li>
                 <input type="radio" name="likert14" value="strong_agree">
@@ -449,7 +461,8 @@
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
-            <label class="statement">17. O aplicativo fornece todas as informações necessárias para completar as tarefas de forma clara e compreensível.</label>
+            <label class="statement">17. O aplicativo fornece todas as informações necessárias para completar as tarefas
+              de forma clara e compreensível.</label>
             <ul class='likert'>
               <li>
                 <input type="radio" name="likert17" value="strong_agree">
@@ -568,7 +581,8 @@
               </li>
             </ul>
 
-            <label class="statement">22. Eu achei o aplicativo desnecessariamente complexo. Precisei lembrar, pesquisar ou pensar muito para completar as tarefas.</label>
+            <label class="statement">22. Eu achei o aplicativo desnecessariamente complexo. Precisei lembrar, pesquisar
+              ou pensar muito para completar as tarefas.</label>
             <ul class='likert'>
               <li>
                 <input type="radio" name="likert22" value="strong_agree">
@@ -732,39 +746,41 @@
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
-                          
+
           </form>
 
-        
+
         </div>
         <div class="mr-auto">
           <button type="button" class="btn btn-lg whitebutton">Enviar</button>
         </div>
       </div>
     </div>
-    
-  </div>
-</div>
-
-
-
-
-<footer class="bg-light text-center text-lg-start">
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2021 Suzane Santos dos Santos
 
   </div>
-  <!-- Copyright -->
-</footer>
+  </div>
 
-<!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      © 2021 Suzane Santos dos Santos
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
