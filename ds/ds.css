@@ -1,7 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
   color: #3b3735;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -12,15 +12,12 @@ a {
 }
 
 .h5 {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
-.wrap {
-    font:12px Arial, san-serif;
-  }
+.wrap 
   .option {
     margin-left: 4rem;
-    font-size: 1.2em;
   }
   h1.likert-header {
     padding-left:4.256%;
@@ -28,7 +25,6 @@ a {
   }
   form .statement {
     display:block;
-    font-size: 2em;
     font-weight: bold;
     padding: 30px 0 1rem 4.256%;
     margin-bottom:10px;
@@ -44,6 +40,8 @@ a {
     padding:2rem 0 35px 4rem;
     display:block;
     border-bottom:2px solid #efefef;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
   form .likert:last-of-type {border-bottom:0;}
   form .likert:before {
@@ -54,7 +52,7 @@ a {
     display:block;
     background-color:grey;
     height:4px;
-    width:62%;
+    width:63%;
   }
   form .likert li {
     display:inline-block;
@@ -65,7 +63,7 @@ a {
   form .likert li input[type=radio] {
     display:block;
     position:relative;
-    top:0;
+    top:-5px;
     left:50%;
     margin-left:-6px;
   }
@@ -73,8 +71,7 @@ a {
   form .likert li label {
     width:100%;
     margin-top: 1rem;
-    font-size: 2em;
-  }
+    }
  
  
 
@@ -93,8 +90,7 @@ a {
 }
 
 input[type="radio"] {
-  -ms-transform: scale(1.5); 
-  -webkit-transform: scale(1.5);
+  
   transform: scale(1.5);
 }
 
@@ -103,4 +99,9 @@ input[type="text"] {
   border-bottom: 1px solid black;
   display: inline;
   
+}
+
+.esquerda {
+  position:relative;
+  right: 50px;
 }
