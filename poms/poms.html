@@ -76,100 +76,120 @@
                         <p class="lead ml-5 p-3"> São apresentadas abaixo uma série de palavras que descrevem sensações
                             que as pessoas sentem no dia a dia. Leia primeiro cada palavra com cuidado.
                             Depois selecione a palavra que melhor corresponda a forma que você tem se sentido ao longo
-                            dos últimos sete dias, incluindo o dia de hoje. Veja os exemplos:
+                            dos últimos sete dias, incluindo o dia de hoje. Veja as instruções:
                         </p>
                     </blockquote>
 
-                    <form action="">
-                        <label class="statement">Exemplo 1. Confiante</label>
-                        <ul class='likert'>
-                            <li>
-                                <input type="radio" name="likerte1" value="zero" checked>
-                                <label>Nada</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte1" value="one">
-                                <label>Um Pouco</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte1" value="two">
-                                <label>Moderadamente</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte1" value="three">
-                                <label>Bastante</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte1" value="four">
-                                <label>Muitíssimo</label>
-                            </li>
+                    <div class="d-flex flex-column-reverse">
+                        <button class="btn whitebutton btn-lg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Instruções
+                        </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+              
+                         
+                                <form action="">
+                                    <label class="statement">Exemplo 1. Confiante</label>
+                                    <ul class='likert'>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte1" id="inlineRadio2" value="zero" checked>
+                                            <label>Nada</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte1" id="inlineRadio2" value="one">
+                                            <label>Um Pouco</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte1" id="inlineRadio2" value="two">
+                                            <label>Moderadamente</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte1" id="inlineRadio2" value="three">
+                                            <label>Bastante</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte1" id="inlineRadio2" value="four">
+                                            <label>Muitíssimo</label>
+                                        </li>
+            
+                                        <p class="h5 mt-4">Nesse caso, a pessoa considerou que não se sentiu nada confiante durante
+                                            a última semana, pois marcou a
+                                            opção "nada" em relaçao a palavra "confiante".</p>
+                                    </ul>
+                                </form>
+            
+                                <form action="">
+                                    <label class="statement">Exemplo 2. Confiante</label>
+                                    <ul class='likert'>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte2" id="inlineRadio2" value="zero">
+                                            <label>Nada</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte2" id="inlineRadio2" value="one">
+                                            <label>Um Pouco</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte2" id="inlineRadio2" value="two" checked>
+                                            <label>Moderadamente</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte2" id="inlineRadio2" value="three">
+                                            <label>Bastante</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte2" id="inlineRadio2" value="four">
+                                            <label>Muitíssimo</label>
+                                        </li>
+            
+                                        <p class="h5 mt-4">Neste segundo exemplo, a pessoa apresentou uma resposta neutra sobre o
+                                            quão confiante tem se sentido durante a última semana,
+                                            pois selecionou uma opção igualmente distante de “Nada” ou “Muitíssimo”.</p>
+                                    </ul>
+                                </form>
+            
+                                <form action="">
+                                    <label class="statement">Exemplo 3. Confiante</label>
+                                    <ul class='likert'>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte3" id="inlineRadio2" value="zero">
+                                            <label>Nada</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte3" id="inlineRadio2" value="one">
+                                            <label>Um Pouco</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte3" id="inlineRadio2" value="two">
+                                            <label>Moderadamente</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte3" id="inlineRadio2" value="three">
+                                            <label>Bastante</label>
+                                        </li>
+                                        <li>
+                                            <input  class="form-check-input" type="radio" name="likerte3" id="inlineRadio2" value="four" checked>
+                                            <label>Muitíssimo</label>
+                                        </li>
+            
+                                        <p class="h5 mt-4">Já nesse caso, a pessoa considerou que se sentiu muitíssimo confiente,
+                                            uma vez que
+                                            marcou a opção "Muitíssimo" em relação a palavra confiante.</p>
+                                    </ul>
+                                </form>
+            
+              
+              
+                                
+              
+                            </div>
+              
+                        </div>
+                    </div>
 
-                            <p class="h5 mt-4">Nesse caso, a pessoa considerou que não se sentiu nada confiante durante
-                                a última semana, pois marcou a
-                                opção "nada" em relaçao a palavra "confiante".</p>
-                        </ul>
-                    </form>
-
-                    <form action="">
-                        <label class="statement">Exemplo 2. Confiante</label>
-                        <ul class='likert'>
-                            <li>
-                                <input type="radio" name="likerte2" value="zero">
-                                <label>Nada</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte2" value="one">
-                                <label>Um Pouco</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte2" value="two" checked>
-                                <label>Moderadamente</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte2" value="three">
-                                <label>Bastante</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte2" value="four">
-                                <label>Muitíssimo</label>
-                            </li>
-
-                            <p class="h5 mt-4">Neste segundo exemplo, a pessoa apresentou uma resposta neutra sobre o
-                                quão confiante tem se sentido durante a última semana,
-                                pois selecionou uma opção igualmente distante de “Nada” ou “Muitíssimo”.</p>
-                        </ul>
-                    </form>
-
-                    <form action="">
-                        <label class="statement">Exemplo 3. Confiante</label>
-                        <ul class='likert'>
-                            <li>
-                                <input type="radio" name="likerte3" value="zero">
-                                <label>Nada</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte3" value="one">
-                                <label>Um Pouco</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte3" value="two">
-                                <label>Moderadamente</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte3" value="three">
-                                <label>Bastante</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likerte3" value="four" checked>
-                                <label>Muitíssimo</label>
-                            </li>
-
-                            <p class="h5 mt-4">Já nesse caso, a pessoa considerou que se sentiu muitíssimo confiente,
-                                uma vez que
-                                marcou a opção "Muitíssimo" em relação a palavra confiante.</p>
-                        </ul>
-                    </form>
-
+                    
                     <hr>
 
 
@@ -185,23 +205,23 @@
                         <label class="statement">1. Tenso</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert1" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert1" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert1" value="one">
+                                <input  class="form-check-input" type="radio" name="likert1" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert1" value="two">
+                                <input  class="form-check-input" type="radio" name="likert1" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert1" value="three">
+                                <input  class="form-check-input" type="radio" name="likert1" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert1" value="four">
+                                <input  class="form-check-input" type="radio" name="likert1" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -209,23 +229,23 @@
                         <label class="statement">2. Irritado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert2" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert2" value="one">
+                                <input  class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert2" value="two">
+                                <input  class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert2" value="three">
+                                <input  class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert2" value="four">
+                                <input  class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -233,23 +253,23 @@
                         <label class="statement">3. Imprestável</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert3" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert3" value="one">
+                                <input  class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert3" value="two">
+                                <input  class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert3" value="three">
+                                <input  class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert3" value="four">
+                                <input  class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -257,23 +277,23 @@
                         <label class="statement">4. Esgotado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert4" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert4" value="one">
+                                <input  class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert4" value="two">
+                                <input  class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert4" value="three">
+                                <input  class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert4" value="four">
+                                <input  class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -281,23 +301,23 @@
                         <label class="statement">5. Animado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert5" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert5" value="one">
+                                <input  class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert5" value="two">
+                                <input  class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert5" value="three">
+                                <input  class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert5" value="four">
+                                <input  class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -305,23 +325,23 @@
                         <label class="statement">6. Confuso</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert6" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert6" value="one">
+                                <input  class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert6" value="two">
+                                <input  class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert6" value="three">
+                                <input  class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert6" value="four">
+                                <input  class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -329,23 +349,23 @@
                         <label class="statement">7. Triste</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert7" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert7" value="one">
+                                <input  class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert7" value="two">
+                                <input  class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert7" value="three">
+                                <input  class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert7" value="four">
+                                <input  class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -353,23 +373,23 @@
                         <label class="statement">8. Ativo</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert8" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert8" value="one">
+                                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert8" value="two">
+                                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert8" value="three">
+                                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert8" value="four">
+                                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -377,23 +397,23 @@
                         <label class="statement">9. Mal humorado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert9" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert9" value="one">
+                                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert9" value="two">
+                                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert9" value="three">
+                                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert9" value="four">
+                                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -401,23 +421,23 @@
                         <label class="statement">10. Enérgico</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert10" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert10" value="one">
+                                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert10" value="two">
+                                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert10" value="three">
+                                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert10" value="four">
+                                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -425,23 +445,23 @@
                         <label class="statement">11. Sem valor</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert11" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert11" value="one">
+                                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert11" value="two">
+                                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert11" value="three">
+                                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert11" value="four">
+                                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -449,23 +469,23 @@
                         <label class="statement">12. Inquieto</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert12" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert12" value="one">
+                                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert12" value="two">
+                                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert12" value="three">
+                                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert12" value="four">
+                                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -473,23 +493,23 @@
                         <label class="statement">13. Fatigado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert13" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert13" value="one">
+                                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert13" value="two">
+                                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert13" value="three">
+                                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert13" value="four">
+                                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -497,23 +517,23 @@
                         <label class="statement">14. Aborrecido</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert14" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert14" value="one">
+                                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert14" value="two">
+                                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert14" value="three">
+                                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert14" value="four">
+                                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -521,23 +541,23 @@
                         <label class="statement">15. Desencorajado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert15" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert15" value="one">
+                                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert15" value="two">
+                                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert15" value="three">
+                                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert15" value="four">
+                                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -545,23 +565,23 @@
                         <label class="statement">16. Nervoso</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert16" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert16" value="one">
+                                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert16" value="two">
+                                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert16" value="three">
+                                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert16" value="four">
+                                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -569,23 +589,23 @@
                         <label class="statement">17. Só</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert17" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert17" value="one">
+                                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert17" value="two">
+                                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert17" value="three">
+                                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert17" value="four">
+                                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -593,23 +613,23 @@
                         <label class="statement">18. Baralhado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert18" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert18" value="one">
+                                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert18" value="two">
+                                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert18" value="three">
+                                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert18" value="four">
+                                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -617,23 +637,23 @@
                         <label class="statement">19. Exausto</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert19" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert19" value="one">
+                                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert19" value="two">
+                                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert19" value="three">
+                                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert19" value="four">
+                                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -641,23 +661,23 @@
                         <label class="statement">20. Ansioso</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert20" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert20" value="one">
+                                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert20" value="two">
+                                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert20" value="three">
+                                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert20" value="four">
+                                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -665,23 +685,23 @@
                         <label class="statement">21. Deprimido</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert21" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert21" value="one">
+                                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert21" value="two">
+                                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert21" value="three">
+                                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert21" value="four">
+                                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -689,23 +709,23 @@
                         <label class="statement">22. Sem energia</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert22" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert22" value="one">
+                                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert22" value="two">
+                                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert22" value="three">
+                                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert22" value="four">
+                                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -713,23 +733,23 @@
                         <label class="statement">23. Miserável</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert23" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert23" value="one">
+                                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert23" value="two">
+                                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert23" value="three">
+                                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert23" value="four">
+                                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -737,23 +757,23 @@
                         <label class="statement">24. Desnorteado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert24" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert24" value="one">
+                                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert24" value="two">
+                                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert24" value="three">
+                                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert24" value="four">
+                                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -761,23 +781,23 @@
                         <label class="statement">25. Furioso</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert25" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert25" value="one">
+                                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert25" value="two">
+                                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert25" value="three">
+                                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert25" value="four">
+                                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -785,23 +805,23 @@
                         <label class="statement">26. Eficaz</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert26" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert26" value="one">
+                                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert26" value="two">
+                                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert26" value="three">
+                                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert26" value="four">
+                                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -809,23 +829,23 @@
                         <label class="statement">27. Cheio de vida</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert27" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert27" value="one">
+                                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert27" value="two">
+                                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert27" value="three">
+                                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert27" value="four">
+                                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -833,23 +853,23 @@
                         <label class="statement">28. Com mal feitio</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert28" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert28" value="one">
+                                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert28" value="two">
+                                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert28" value="three">
+                                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert28" value="four">
+                                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -857,23 +877,23 @@
                         <label class="statement">29. Tranquilo</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert29" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert29" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert29" value="one">
+                                <input  class="form-check-input" type="radio" name="likert29" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert29" value="two">
+                                <input  class="form-check-input" type="radio" name="likert29" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert29" value="three">
+                                <input  class="form-check-input" type="radio" name="likert29" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert29" value="four">
+                                <input  class="form-check-input" type="radio" name="likert29" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -881,23 +901,23 @@
                         <label class="statement">30. Desanimado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert30" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert30" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert30" value="one">
+                                <input  class="form-check-input" type="radio" name="likert30" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert30" value="two">
+                                <input  class="form-check-input" type="radio" name="likert30" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert30" value="three">
+                                <input  class="form-check-input" type="radio" name="likert30" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert30" value="four">
+                                <input  class="form-check-input" type="radio" name="likert30" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -905,23 +925,23 @@
                         <label class="statement">31. Impaciente</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert31" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert31" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert31" value="one">
+                                <input  class="form-check-input" type="radio" name="likert31" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert31" value="two">
+                                <input  class="form-check-input" type="radio" name="likert31" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert31" value="three">
+                                <input  class="form-check-input" type="radio" name="likert31" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert31" value="four">
+                                <input  class="form-check-input" type="radio" name="likert31" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -929,23 +949,23 @@
                         <label class="statement">32. Cheio de boa disposição</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert32" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert32" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert32" value="one">
+                                <input  class="form-check-input" type="radio" name="likert32" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert32" value="two">
+                                <input  class="form-check-input" type="radio" name="likert32" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert32" value="three">
+                                <input  class="form-check-input" type="radio" name="likert32" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert32" value="four">
+                                <input  class="form-check-input" type="radio" name="likert32" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -953,23 +973,23 @@
                         <label class="statement">33. Inútil</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert33" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert33" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert33" value="one">
+                                <input  class="form-check-input" type="radio" name="likert33" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert33" value="two">
+                                <input  class="form-check-input" type="radio" name="likert33" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert33" value="three">
+                                <input  class="form-check-input" type="radio" name="likert33" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert33" value="four">
+                                <input  class="form-check-input" type="radio" name="likert33" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -977,23 +997,23 @@
                         <label class="statement">34. Estourado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert34" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert34" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert34" value="one">
+                                <input  class="form-check-input" type="radio" name="likert34" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert34" value="two">
+                                <input  class="form-check-input" type="radio" name="likert34" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert34" value="three">
+                                <input  class="form-check-input" type="radio" name="likert34" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert34" value="four">
+                                <input  class="form-check-input" type="radio" name="likert34" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1001,23 +1021,23 @@
                         <label class="statement">35. Competente</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert35" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert35" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert35" value="one">
+                                <input  class="form-check-input" type="radio" name="likert35" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert35" value="two">
+                                <input  class="form-check-input" type="radio" name="likert35" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert35" value="three">
+                                <input  class="form-check-input" type="radio" name="likert35" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert35" value="four">
+                                <input  class="form-check-input" type="radio" name="likert35" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1025,23 +1045,23 @@
                         <label class="statement">36. Culpado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert36" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert36" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert36" value="one">
+                                <input  class="form-check-input" type="radio" name="likert36" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert36" value="two">
+                                <input  class="form-check-input" type="radio" name="likert36" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert36" value="three">
+                                <input  class="form-check-input" type="radio" name="likert36" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert36" value="four">
+                                <input  class="form-check-input" type="radio" name="likert36" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1049,23 +1069,23 @@
                         <label class="statement">37. Enervado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert37" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert37" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert37" value="one">
+                                <input  class="form-check-input" type="radio" name="likert37" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert37" value="two">
+                                <input  class="form-check-input" type="radio" name="likert37" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert37" value="three">
+                                <input  class="form-check-input" type="radio" name="likert37" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert37" value="four">
+                                <input  class="form-check-input" type="radio" name="likert37" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1073,23 +1093,23 @@
                         <label class="statement">38. Infeliz</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert38" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert38" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert38" value="one">
+                                <input  class="form-check-input" type="radio" name="likert38" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert38" value="two">
+                                <input  class="form-check-input" type="radio" name="likert38" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert38" value="three">
+                                <input  class="form-check-input" type="radio" name="likert38" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert38" value="four">
+                                <input  class="form-check-input" type="radio" name="likert38" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1097,23 +1117,23 @@
                         <label class="statement">39. Alegre</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert39" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert39" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert39" value="one">
+                                <input  class="form-check-input" type="radio" name="likert39" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert39" value="two">
+                                <input  class="form-check-input" type="radio" name="likert39" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert39" value="three">
+                                <input  class="form-check-input" type="radio" name="likert39" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert39" value="four">
+                                <input  class="form-check-input" type="radio" name="likert39" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1121,23 +1141,23 @@
                         <label class="statement">40. Inseguro</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert40" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert40" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert40" value="one">
+                                <input  class="form-check-input" type="radio" name="likert40" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert40" value="two">
+                                <input  class="form-check-input" type="radio" name="likert40" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert40" value="three">
+                                <input  class="form-check-input" type="radio" name="likert40" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert40" value="four">
+                                <input  class="form-check-input" type="radio" name="likert40" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1145,23 +1165,23 @@
                         <label class="statement">41. Cansado</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert41" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert41" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert41" value="one">
+                                <input  class="form-check-input" type="radio" name="likert41" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert41" value="two">
+                                <input  class="form-check-input" type="radio" name="likert41" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert41" value="three">
+                                <input  class="form-check-input" type="radio" name="likert41" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert41" value="four">
+                                <input  class="form-check-input" type="radio" name="likert41" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
@@ -1169,23 +1189,23 @@
                         <label class="statement">42. Apático</label>
                         <ul class='likert'>
                             <li>
-                                <input type="radio" name="likert42" value="zero">
+                                <input  class="form-check-input" type="radio" name="likert42" id="inlineRadio2" value="zero">
                                 <label>Nada</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert42" value="one">
+                                <input  class="form-check-input" type="radio" name="likert42" id="inlineRadio2" value="one">
                                 <label>Um Pouco</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert42" value="two">
+                                <input  class="form-check-input" type="radio" name="likert42" id="inlineRadio2" value="two">
                                 <label>Moderadamente</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert42" value="three">
+                                <input  class="form-check-input" type="radio" name="likert42" id="inlineRadio2" value="three">
                                 <label>Bastante</label>
                             </li>
                             <li>
-                                <input type="radio" name="likert42" value="four">
+                                <input  class="form-check-input" type="radio" name="likert42" id="inlineRadio2" value="four">
                                 <label>Muitíssimo</label>
                             </li>
                         </ul>
