@@ -76,153 +76,171 @@
                     <h1 class="likert-header">DS — Diferencial Semântico</h1>
                     <blockquote class="blockquote">
                         <p class="lead ml-5 p-3">A seguir serão apresentados pares de adjetivos opostos. Para cada par,
-                            marque a opção que melhor representa a sua avaliação sobre o sistema. Quanto mais próximo de
-                            um adjetivo, mais você concorda com ele. Veja os exemplos:
+                            marque a opção que melhor representa a sua avaliação sobre <span class="mt-3"><input type="text" placeholder="Nome da solução" name="">.</span>
+                             Quanto mais próximo de
+                            um adjetivo, mais você concorda com ele. <br>
+                            <br>
+                            <button class="btn whitebutton">Salvar</button>
                         </p>
                     </blockquote>
 
-                    <form>
-                        <label class="statement">Você considera o sistema:</label>
-                        <p class="h5 ml-5" style="font-weight: bold;">Exemplo 1.</p>
-                        <ul class='likert'>
+                    <p>
+<div class="d-flex flex-column-reverse">
+                        <button class="btn whitebutton btn-lg" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Instruções
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            <form>
+                                <label class="statement">Você considera o sistema:</label>
+                                <p class="h5 ml-5" style="font-weight: bold;">Exemplo 1.</p>
+                                <ul class="likert">
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Útil</h5>
+                                    </li>
+        
+                                    <li>
+        
+                                        <input type="radio" name="likertex1" value="strong_agree" checked>
+                                        <label>1</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="strong_agree">
+                                        <label>2</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="strong_agree">
+                                        <label>3</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="disagree">
+                                        <label>4</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="strong_agree">
+                                        <label>5</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="strong_agree">
+                                        <label>6</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex1" value="strong_agree">
+                                        <label>7</label>
+                                    </li>
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Inútil</h5>
+                                    </li>
+                                    <p class="h5 mt-4">Nesse caso, a pessoa considerou que o sistema foi útil, pois marcou uma
+                                        opção mais próxima do adjetivo “útil”.</p>
+                                </ul>
+        
+                            </form>
+        
+                            <form>
+                                <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 2.</p>
+                                <ul class='likert'>
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Útil</h5>
+                                    </li>
+        
+                                    <li>
+        
+                                        <input type="radio" name="likertex2" value="strong_agree">
+                                        <label>1</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="strong_agree">
+                                        <label>2</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="strong_agree">
+                                        <label>3</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="disagree">
+                                        <label>4</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="strong_agree">
+                                        <label>5</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="strong_agree">
+                                        <label>6</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex2" value="strong_agree" checked>
+                                        <label>7</label>
+                                    </li>
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Inútil</h5>
+                                    </li>
+                                    <p class="h5 mt-4">Já nesse caso, a pessoa considerou o sistema como pouco útil, uma vez que
+                                        marcou uma opção mais próxima do adjetivo “inútil”.
+                                    </p>
+                                </ul>
+                            </form>
 
-                            <li style="font-weight: bold;">
-                                <h5>Útil</h5>
-                            </li>
+                            <form>
+                                <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 3.</p>
+                                <ul class='likert'>
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Útil</h5>
+                                    </li>
+        
+                                    <li>
+        
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>1</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>2</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>3</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="disagree" checked>
+                                        <label>4</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>5</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>6</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="likertex3" value="strong_agree">
+                                        <label>7</label>
+                                    </li>
+        
+                                    <li style="font-weight: bold;">
+                                        <h5>Inútil</h5>
+                                    </li>
+                                    <p class="h5 mt-4">Neste último exemplo, a pessoa apresentou uma avaliação neutra do
+                                        sistema, pois selecionou uma opção igualmente distante de “útil” ou “inútil”.
+                                    </p>
+                                </ul>
+        
+        
+                            </form>
 
-                            <li>
-
-                                <input type="radio" name="likertex1" value="strong_agree" checked>
-                                <label>1</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="strong_agree">
-                                <label>2</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="strong_agree">
-                                <label>3</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="disagree">
-                                <label>4</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="strong_agree">
-                                <label>5</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="strong_agree">
-                                <label>6</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex1" value="strong_agree">
-                                <label>7</label>
-                            </li>
-
-                            <li style="font-weight: bold;">
-                                <h5>Inútil</h5>
-                            </li>
-                            <p class="h5 mt-4">Nesse caso, a pessoa considerou que o sistema foi útil, pois marcou uma
-                                opção mais próxima do adjetivo “útil”.</p>
-                        </ul>
-
-                    </form>
-
-                    <form>
-                        <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 2.</p>
-                        <ul class='likert'>
-
-                            <li style="font-weight: bold;">
-                                <h5>Útil</h5>
-                            </li>
-
-                            <li>
-
-                                <input type="radio" name="likertex2" value="strong_agree">
-                                <label>1</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="strong_agree">
-                                <label>2</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="strong_agree">
-                                <label>3</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="disagree">
-                                <label>4</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="strong_agree">
-                                <label>5</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="strong_agree">
-                                <label>6</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex2" value="strong_agree" checked>
-                                <label>7</label>
-                            </li>
-
-                            <li style="font-weight: bold;">
-                                <h5>Inútil</h5>
-                            </li>
-                            <p class="h5 mt-4">Já nesse caso, a pessoa considerou o sistema como pouco útil, uma vez que
-                                marcou uma opção mais próxima do adjetivo “inútil”.
-                            </p>
-                        </ul>
-                    </form>
-                    <form>
-                        <p class="h5 ml-5 mt-2" style="font-weight: bold;">Exemplo 3.</p>
-                        <ul class='likert'>
-
-                            <li style="font-weight: bold;">
-                                <h5>Útil</h5>
-                            </li>
-
-                            <li>
-
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>1</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>2</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>3</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="disagree" checked>
-                                <label>4</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>5</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>6</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="likertex3" value="strong_agree">
-                                <label>7</label>
-                            </li>
-
-                            <li style="font-weight: bold;">
-                                <h5>Inútil</h5>
-                            </li>
-                            <p class="h5 mt-4">Neste último exemplo, a pessoa apresentou uma avaliação neutra do
-                                sistema, pois selecionou uma opção igualmente distante de “útil” ou “inútil”.
-                            </p>
-                        </ul>
-
-
-                    </form>
+                        </div>
+                            
+                        </div>
+                    </div>
 
                     <hr>
 
