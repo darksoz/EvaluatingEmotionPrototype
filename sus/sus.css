@@ -1,7 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
   color: #3b3735;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -11,24 +11,16 @@ a {
   font-weight: 400;
 }
 
-.modal-intrucoes{
-  float: right;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-size: 20px;
-}
 
-.wrap {
-    font:1rem Arial, san-serif;
-  }
+
+.wrap 
+
   h1.likert-header {
     padding-left:4.25%;
     margin:20px 0 0;
   }
   form .statement {
     display:block;
-    font-size: 1.2rem;
     font-weight: bold;
     padding: 30px 0 0 4.25%;
     margin-bottom:10px;
@@ -40,6 +32,9 @@ a {
     padding:0 0 35px;
     display:block;
     border-bottom:2px solid #DCDCDC;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  
   }
   form .likert:last-of-type {border-bottom:0;}
   form .likert:before {
@@ -116,6 +111,16 @@ a {
     background-color: grey;
 }
 
-input[type=radio]{
-  transform:scale(1.2);
+input[type="radio"] {
+  -ms-transform: scale(2.0); 
+  -webkit-transform: scale(2.0);
+  transform: scale(2.0);
+}
+
+
+input[type="text"] {
+  border:none;
+  border-bottom: 1px solid black;
+  display: inline;
+  
 }
