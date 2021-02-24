@@ -1,7 +1,7 @@
 body {
   font-family: Montserrat, sans-serif;
   color: #3b3735;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 a {
@@ -11,22 +11,14 @@ a {
   font-weight: 400;
 }
 
-.modal-intrucoes{
-  float: right;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-size: 20px;
-}
 
 .navbar-brand {
     color: #000000;
     font-size: 2rem;
     } 
 
-    .wrap {
-        font:12px Arial, san-serif;
-      }
+    .wrap 
+      
       h1.likert-header {
         padding-left:4.25%;
         margin:20px 0 0;
@@ -40,45 +32,23 @@ a {
       }
 
       .gdsdiv {
-        border-bottom:2px solid grey;
 
         padding: 1rem;
 
+        list-style:none;
+        width:100%;
+        margin:0;
+        padding:0 0 35px;
+        display:block;
+        border-bottom:2px solid #DCDCDC;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+      
+
+        
       }
 
-      input[type=radio]{
-        transform:scale(1.5);
-      }
-
-      #customers {
-        font-family: Arial, Helvetica, sans-serif;
-        width: 100%;
-      }
-      
-      #customers td, #customers th {
-        border: 1px solid #ddd;
-        padding: 8px;
-      }
-      
-      #customers tr:nth-child(even){background-color: #f2f2f2;}
-      
-      #customers tr:hover {background-color: #ddd;}
-      
-      #customers th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: center;
-        background-color: #ed8200;
-        color: Black;
-      }
     
-      #customers tr {
-        text-align: center;
-      }
-
-      .score{
-        text-align: center;
-      }
 
       .whitebutton{
         background-color: #00bfa5;
@@ -91,5 +61,5 @@ a {
     }
 
     input[type=radio]{
-      transform:scale(1.3);
+      transform:scale(1.4);
     }
