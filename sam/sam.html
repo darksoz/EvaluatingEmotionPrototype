@@ -67,53 +67,217 @@
 
             <div class="wrap">
                 <h1 class="likert-header">SAM</h1>
-                <p class="lead ml-5 p-3"> Nesta tarefa, você será solicitado a avaliar suas emoções em três escalas distintas.
+                <p class="lead ml-5 p-3"> Nesta tarefa, você será solicitado a avaliar suas emoções em três escalas distintas. Veja o que cada escala representa nas instruções.                    
                 </p>
             </blockquote>
 
+            <div class="d-flex flex-column-reverse">
+                <button class="btn whitebutton btn-lg" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Instruções
+                </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      
+                        <form>
+                            <blockquote>
+                                <h3> Satisfação:</h3>
+            
+                                <p class="lead ml-5 p-3">
+                                    Avalie o quão positiva ou negativa é a emoção que você sente, variando de sentimentos desagradáveis a agradáveis sentimentos de felicidade.
+                                </p>
+                            </blockquote>
+            
+                            <ul class='likert'>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="zero" checked> 
+                                    <img src="../imagens/Like.png" width="80px">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="one">
+                                    <img src="../imagens/Sorriso.png" width="80px">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="two">
+                                    <img src="../imagens/Neutro.png" width="80px">
+                                </li>
+            
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="three">
+                                    <img src="../imagens/Triste.png" width="80px">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+            
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="four">
+                                    <img src="../imagens/Deslike.png" width="80px">
+                                </li>
+                            </ul>
+            
+                        </form>
+            
+                        <hr>
+                        <form>
+                            <blockquote>
+                                <h3> Motivação:</h3>
+            
+                                <p class="lead ml-5 p-3">
+                                    Avalie o quão motivada ou apática é a emoção que você sente, variando de excitação frenética a sonolência ou tédio.                    </p>
+                            </blockquote>
+            
+                            <ul class='likert'>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2"value="zero">
+                                    <img src="../imagens/Criativo.png" width="80px">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" value="one">
+                                    <img src="../imagens/Radiante.png" width="80px">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2"value="two" checked>
+                                    <img src="../imagens/Neutro.png" width="80px">
+                                </li>
+            
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <inputclass="form-check-input" type="radio" name="likertex2" value="three">
+                                    <img src="../imagens/Entendiado.png" width="80px">
+                                </li>
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+            
+                                <li>
+                                    <input class="form-check-input" type="radio" name="likertex2" value="four">
+                                    <img src="../imagens/Sono.png" width="80px">
+                                </li>
+                            </ul>
+            
+                        </form>
+            
+                        <hr>
+                        <form>
+                            <blockquote>
+                                <h3>Domínio</h3>
+                                <p class="lead ml-5 p-3"> 
+                                    Avalie até que ponto sua emoção o faz sentir que está no controle da situação, variando de não estar no controle a 100% no controle. </p>
+                            </blockquote>
+            
+                            <ul class='likert'>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex2" value="zero">
+                                    <img src="../imagens/Frustrado.png" width="80px">
+                                </li>
+                                <li>
+                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex2" value="one">
+                                    <img src="../imagens/Confuso.png" width="80px">
+                                </li>
+                                <li>
+                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex2" value="two">
+                                    <img src="../imagens/Neutro.png" width="80px">
+                                </li>
+            
+                                <li>
+                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex2" value="three">
+                                    <img src="../imagens/Sorriso.png" width="80px">
+                                </li>
+                                <li>
+                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                </li>
+            
+                                <li>
+                                    <input  class="form-check-input" type="radio" name="likertex2" value="four" checked> 
+                                    <img src="../imagens/Inteligente.png" width="80px">
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+
             <form>
 
-                <blockquote>
-                    <h3> Valência:</h3>
+                <hr>
 
-                    <p class="lead ml-5 p-3">
-                        Avalie o quão positiva ou negativa é a emoção que você sente, variando de sentimentos desagradáveis a agradáveis sentimentos de felicidade.
-                    </p>
-                </blockquote>
+                <div class="accordion" id="accordionExampleTwo">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          Satisfação
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse hide" aria-labelledby="headingTwo" data-bs-parent="#accordionExampleTwo">
+                        <div class="accordion-body">
+                          <strong>Avalie o quão positiva ou negativa é a emoção que você sente, variando de sentimentos desagradáveis a agradáveis sentimentos de felicidade. </strong> 
+                        </div>
+                      </div>
+                    </div>
 
                 <ul class='likert'>
                     <li>
-                        <input type="radio" name="likert1" value="zero">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
                         <img src="../imagens/Like.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="one">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
                         <img src="../imagens/Sorriso.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="two">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="three">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
                         <img src="../imagens/Triste.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
 
                     <li>
-                        <input type="radio" name="likert1" value="four">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
                         <img src="../imagens/Deslike.png" width="80px">
                     </li>
                 </ul>
@@ -122,46 +286,54 @@
 
             <hr>
             <form>
-                <blockquote>
-                    <h3> Excitação:</h3>
-
-                    <p class="lead ml-5 p-3">
-                        Avalie o quão excitada ou apática é a emoção que você sente, variando de excitação frenética a sonolência ou tédio.                    </p>
-                </blockquote>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Motivação
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse hide" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong> Avalie o quão motivada ou apática é a emoção que você sente, variando de excitação frenética a sonolência ou tédio.  </strong> 
+                        </div>
+                      </div>
+                    </div>
+                </div>
 
                 <ul class='likert'>
                     <li>
-                        <input type="radio" name="likert1" value="zero">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
                         <img src="../imagens/Criativo.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="one">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
                         <img src="../imagens/Radiante.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="two">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="three">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
                         <img src="../imagens/Entendiado.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
 
                     <li>
-                        <input type="radio" name="likert1" value="four">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
                         <img src="../imagens/Sono.png" width="80px">
                     </li>
                 </ul>
@@ -170,45 +342,55 @@
 
             <hr>
             <form>
-                <blockquote>
-                    <h3>Domínio</h3>
-                    <p class="lead ml-5 p-3"> 
-                        Avalie até que ponto sua emoção o faz sentir que está no controle da situação, variando de não estar no controle a 100% no controle.                     </p>
-                </blockquote>
+                
+                    <div class="accordion" id="accordionExampleThree">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                              Domínio
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse hide" aria-labelledby="headingThree" data-bs-parent="#accordionExampleThree">
+                            <div class="accordion-body">
+                              <strong> Avalie até que ponto sua emoção o faz sentir que está no controle da situação, variando de não estar no controle a 100% no controle. </strong> 
+                            </div>
+                          </div>
+                        </div>
+                    </div>
 
                 <ul class='likert'>
                     <li>
-                        <input type="radio" name="likert1" value="zero">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
                         <img src="../imagens/Frustrado.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="one">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
                         <img src="../imagens/Confuso.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="two">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
                     <li>
-                        <input type="radio" name="likert1" value="three">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
                         <img src="../imagens/Sorriso.png" width="80px">
                     </li>
                     <li>
-                        <input class="radio" type="radio" name="likert1" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
                     </li>
 
                     <li>
-                        <input type="radio" name="likert1" value="four">
+                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
                         <img src="../imagens/Inteligente.png" width="80px">
                     </li>
                 </ul>
