@@ -31,3 +31,15 @@ body {
         font-weight: 400;
       }
 
+
+      .whitebutton{
+        background-color: #00bfa5;
+        color: black;
+        border: 1px #00bfa5 solid;
+    }
+    
+    .whitebutton:hover {
+        background-color: grey;
+    }
+    
+
