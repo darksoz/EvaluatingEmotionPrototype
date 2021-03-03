@@ -53,12 +53,13 @@ body {
 
 
     #chart-container {
-        margin-top: 20px;
         padding: 250px 50px;
         -webkit-transform: rotate(90deg);
         -moz-transform: rotate(90deg);
         -o-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
         transform: rotate(90deg);
-        margin-bottom: -300px;
+       
+        
     }
+    
