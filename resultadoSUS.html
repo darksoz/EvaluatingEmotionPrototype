@@ -257,6 +257,49 @@
                   })
                 </script>
 
+<div id="chart2"></div>
+
+
+                <script>
+                  
+        var options = {
+          series: [{
+            name: "Respostas",
+            data: [-2,-0,1,-1,2,1,-1,1,2,2,0,0,-1,2,1,0,0,-1,2,0,2,1,-1,2,0,1,2,-2]
+        }],
+          chart: {
+          height: 350,
+          type: 'line',
+          zoom: {
+            enabled: false
+          }
+        },
+        
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: 'straight'
+        },
+        title: {
+          text: 'VIsão Geral das Respostas',
+          align: 'left'
+        },
+        grid: {
+          row: {
+            colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+            opacity: 0.5
+          },
+        },
+        xaxis: {
+          categories: ['Q1','Q2','Q3','Q4','Q5','Q6','Q7','Q8','Q9','Q10','Q11','Q12','Q13','Q14','Q15','Q16','Q17','Q18','Q19','Q20','Q21','Q22','Q23','Q24','Q25','Q26','Q27','Q28' ],
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart2"), options);
+        chart.render();
+                </script>
+
 <div class="d-flex flex-column-reverse">
   <button class="btn whitebutton btn-lg" type="button" data-bs-toggle="collapse"
       data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
