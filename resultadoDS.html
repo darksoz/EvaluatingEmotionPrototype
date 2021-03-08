@@ -10,7 +10,6 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
-    
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,7 +19,11 @@
     <script src="contraste.js"></script>
     <script src="fontsize.js"></script>
     <script src="chart.js"></script>
-    <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+
+       
         <!-- Step 1 - Include the fusioncharts core library -->
         <script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
         <!-- Step 2 - Include the fusion theme -->
@@ -429,12 +432,14 @@
 });
     </script>
 
+
+
    
     <title>EMOFRAME</title>
 </head>
 
 <body>
-   
+    <header>
         <!-- Navbar -->
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bfa5;">
@@ -477,7 +482,7 @@
               <li class="breadcrumb-item"><a href="resultados.html">Resultados</a></li>
               <li class="breadcrumb-item"><a href="user1.html">Resultados Usuário 1</a></li>
 
-              <li class="breadcrumb-item active" aria-current="page">Resultado Usuário 1: POMS</li>
+              <li class="breadcrumb-item active" aria-current="page">Resultado Usuário 1: SUS</li>
               <button class="ms-auto btn btn-lg" style="margin-top: -0.8rem;" onclick="window.location.href='index.html'"><span class="fas fa-sign-out-alt"> Sair </span></button>
 
           </ol>
@@ -509,22 +514,162 @@
         </h3>
 
       </div>
-      <div class="container">
 
-        <div>
-            <h4 class="text-center"> Resultado Diferencial Semântico</h4>
-        </div>
-        <div id="chart-container">Gráfico DS</div>
-        </div>
-  
+        <div class="container text-center">
+
+            
+            
+            <div>
+                <h4 class="text-center"> Resultado Diferencial Semântico</h4>
+               
+            </div>
+            <div id="chart-container" style="height: 750px;" >Gráfico DS
+    
+                <div class="p-0"></div>
+            </div>
+
+
+
+
+<div class="d-flex flex-column-reverse mt-5">
+  <button class="btn whitebutton btn-lg" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Respostas DS
+  </button>
+  </p>
+  <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+
+
+        <div class="row">
+
+          <div class="col-md-12">
+              <table class="table table-striped table-hover">
+                  <tr>
+                    <th>Pergunta</th>
+                    <th>Resposta</th>
+                  </tr>
+                  <tr>
+                    <td>Pergunta 1</td>
+                    <td> 0 </td>
+                  </tr>
+                  <tr>
+                      <td>Pergunta 2</td>
+                      <td> 3</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 3</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 4</td>
+                      <td>-1</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 5</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 6</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 7</td>
+                      <td>3 </td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 8</td>
+                      <td>2 </td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 9</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 10</td>
+                      <td>3 </td>
+                    </tr>
+                    <tr>
+                      <td>Pergunta 11</td>
+                      <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td>Pergunta 12</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 13</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 14</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 15</td>
+                        <td>-2</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 16</td>
+                        <td>1 </td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 17</td>
+                        <td>3 </td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 18</td>
+                        <td>-2</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 19</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Pergunta 20</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Pergunta 21</td>
+                          <td>-1</td>
+                        </tr>
+                        <tr>
+                            <td>Pergunta 22</td>
+                            <td>1 </td>
+                          </tr>
+                          <tr>
+                            <td>Pergunta 23</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td>Pergunta 24</td>
+                            <td>-2 </td>
+                          </tr>
+                          <tr>
+               
+              </table>
+
+         
+
+
+          </div>
+
+    
 
       </div>
 
-      
+  </div>
+</div>
 
+
+                
+
+
+            </div>
+        </div>
 </body>
 
-<footer class="bg-light text-center text-lg-start fixed-bottom" id="roda">
+<footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3">
         © 2021 Suzane Santos dos Santos
