@@ -76,3 +76,13 @@ a {
 input[type=radio]{
   transform:scale(1.5);
 }
+
+.pagination {
+  color: #00bfa5;
+}
+.page-link{
+
+  color: #00bfa5;
+
+
+}
