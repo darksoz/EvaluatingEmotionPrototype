@@ -17,7 +17,25 @@
   <link rel="stylesheet" href="sus.css">
   <script src="../contraste.js"></script>
   <script src="../fontsize.js"></script>
-
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/10853/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Form Data Submitted :)")
+        },
+        error: function(){
+          alert("There was an error :(")
+        }
+    });
+}
+</script>
 
   <title>SUS</title>
 </head>
@@ -87,6 +105,7 @@
               Instruções
           </button>
           </p>
+
           <div class="collapse" id="collapseExample">
               <div class="card card-body">
 
@@ -188,54 +207,53 @@
           </div>
       </div>
       <p class="h5 mt-4"> Nós temos cinco pontos de uma escala que varia de "Concordo Fortemente" a "Discordo Fortemente", eu gostaria que você me dissesse a resposta que melhor descreve a sua reação para cada uma  das afirmações abaixo. </p>
-          <form action="resultado.html">
+          <form id="myForm">
 
             <label class="statement">1. Eu achei fácil inserir dados neste aplicativo.</label>
-            <ul class='likert'>
+            <ul class='likert' id="l1">
               <li>
-                <input class="form-check-input" type="radio" name="likert1" id="inlineRadio2" required>
+                <input class="form-check-input" type="radio" name="likert1" value="Concordo Fortemente"  required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert1" id="inlineRadio2">
+                <input class="form-check-input" type="radio" name="likert1"  value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert1" id="inlineRadio2">
+                <input class="form-check-input" type="radio" name="likert1"  value="Neutro" >
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert1" id="inlineRadio2">
+                <input class="form-check-input" type="radio" name="likert1" value="Discordo Parcialmente" >
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert1" id="inlineRadio2">
+                <input class="form-check-input" type="radio" name="likert1" value="Discordo Fortemente" >
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
-
-
-
+  
+        
             <label class="statement">2. Quando eu cometo um erro é fácil de corrigi-lo.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2"  value = "" required>
+                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2"  value = "Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "">
+                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "">
+                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "">
+                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "">
+                <input class="form-check-input" type="radio" name="likert2" id="inlineRadio2" value = "Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -243,46 +261,46 @@
             <label class="statement">3. As mensagens de erro ajudam a corrigir os problemas.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="strong_agree" required>
+                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="disagree">
+                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert3" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">4. Eu me senti no comando usando este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="strong_agree" required>
+                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="disagree">
+                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert4" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -290,23 +308,23 @@
             <label class="statement">5. Eu achei adequado o tempo que levei para completar as tarefas.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="strong_agree" required>
+                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="disagree">
+                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert5" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -314,23 +332,23 @@
             <label class="statement">6. Foi fácil de aprender a usar este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="strong_agree" required>
+                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="disagree">
+                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert6" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -338,23 +356,23 @@
             <label class="statement">7. É fácil fazer o que eu quero usando este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="strong_agree" required>
+                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="disagree">
+                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="strong_agree">
+                <input class="form-check-input" type="radio" name="likert7" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -362,69 +380,69 @@
             <label class="statement">8. Foi fácil navegar nos menus e telas do aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">9. O aplicativo atende às minhas necessidades.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert8" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert9" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">10. Eu recomendaria este aplicativo para outras pessoas.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert10" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -432,23 +450,23 @@
               realizadas de uma maneira semelhante.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="strong_agree" required> 
+                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="Concordo Fortemente" required> 
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert11" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -456,23 +474,23 @@
             <label class="statement">12. É fácil lembrar como fazer as coisas neste aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert12" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -480,23 +498,23 @@
             <label class="statement">13. Eu usaria este aplicativo com frequência.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert13" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -505,23 +523,23 @@
               permitindo encontrá-los facilmente na tela.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert14" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -529,46 +547,46 @@
             <label class="statement">15. O design de interface do aplicativo é atraente.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert15" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">16. Eu gostei de usar este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert16" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -576,46 +594,46 @@
               de forma clara e compreensível.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert17" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">18. Eu achei o aplicativo muito complicado de usar.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert18" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -623,23 +641,23 @@
             <label class="statement">19. Eu precisei aprender muitas coisas para usar este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert19" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -647,23 +665,23 @@
             <label class="statement">20. Os símbolos e ícones são claros e intuitivos.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert20" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -671,23 +689,23 @@
             <label class="statement">21. Eu achei os textos fáceis de ler.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert21" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -696,92 +714,92 @@
               ou pensar muito para completar as tarefas.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert22" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">23. A terminologia utilizada nos textos dos botões foi fácil de entender.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert23" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">24. Eu precisaria de apoio de uma pessoa para usar este aplicativo</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert24" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
             <label class="statement">25. Eu me senti confortável usando este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert25" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -789,23 +807,23 @@
             <label class="statement">26. O aplicativo se comportou como eu esperava.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert26" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -813,23 +831,23 @@
             <label class="statement">27. Eu achei frustrante usar este aplicativo.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert27" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
@@ -837,34 +855,31 @@
             <label class="statement">28. Eu achei que as várias funções do aplicativo são bem integradas.</label>
             <ul class='likert'>
               <li>
-                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="strong_agree" required>
+                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="Concordo Fortemente" required>
                 <label>Concordo Fortemente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="Concordo Parcialmente">
                 <label>Concordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="Neutro">
                 <label>Neutro</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="disagree">
+                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="Discordo Parcialmente">
                 <label>Discordo Parcialmente</label>
               </li>
               <li>
-                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="strong_agree">
+                <input  class="form-check-input" type="radio" name="likert28" id="inlineRadio2" value="Discordo Fortemente">
                 <label>Discordo Fortemente</label>
               </li>
             </ul>
 
-            <input type="submit" class="btn btn-lg whitebutton" value="Enviar">
-
-
           </form>
 
+          <button class="btn btn-lg whitebutton" onclick="SubForm()">Enviar</button>
 
- 
       </div>
     </div>
   </div>
