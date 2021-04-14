@@ -16,6 +16,25 @@
         <link rel="stylesheet" href="sam.css">
         <script src="../contraste.js"></script>
         <script src="../fontsize.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+      <script>
+      function SubForm (){
+          $.ajax({
+              url:'https://api.apispreadsheets.com/data/10862/',
+              type:'post',
+              data:$("#myForm").serializeArray(),
+              success: function(){
+                alert("Concluído com sucesso")
+              },
+              error: function(){
+                alert("Erro, responda novamente.")
+              }
+          });
+      }
+      </script>
     
     
         <title>SAM</title>
@@ -96,14 +115,14 @@
                                     <img src="../imagens/Like.png" width="80px">
                                 </li>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2"   value="" aria-label="...">
                                 </li>
                                 <li>
                                     <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="one">
                                     <img src="../imagens/Sorriso.png" width="80px">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input class="form-check-input" type="radio" name="likertex1" id="inlineRadio2"   value="" aria-label="...">
                                 </li>
                                 <li>
                                     <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="two">
@@ -111,14 +130,14 @@
                                 </li>
             
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2"   value="" aria-label="...">
                                 </li>
                                 <li>
                                     <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" value="three">
                                     <img src="../imagens/Triste.png" width="80px">
                                 </li>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input  class="form-check-input" type="radio" name="likertex1" id="inlineRadio2"   value="" aria-label="...">
                                 </li>
             
                                 <li>
@@ -140,37 +159,37 @@
             
                             <ul class='likert'>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2"value="zero">
+                                    <input class="form-check-input" type="radio" name="likertsam2"value="zero" >
                                     <img src="../imagens/Criativo.png" width="80px">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" value="one">
+                                    <input class="form-check-input" type="radio" name="likertsam2" value="one">
                                     <img src="../imagens/Radiante.png" width="80px">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2"value="two" checked>
+                                    <input class="form-check-input" type="radio" name="likertsam2"value="two" checked>
                                     <img src="../imagens/Neutro.png" width="80px">
                                 </li>
             
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" value="" aria-label="...">
+                                    <input class="form-check-input" type="radio" name="likertsam2" value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <inputclass="form-check-input" type="radio" name="likertex2" value="three">
+                                    <inputclass="form-check-input" type="radio" name="likertsam2" value="three">
                                     <img src="../imagens/Entendiado.png" width="80px">
                                 </li>
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
             
                                 <li>
-                                    <input class="form-check-input" type="radio" name="likertex2" value="four">
+                                    <input class="form-check-input" type="radio" name="likertsam2" value="four">
                                     <img src="../imagens/Sono.png" width="80px">
                                 </li>
                             </ul>
@@ -187,37 +206,37 @@
             
                             <ul class='likert'>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex2" value="zero">
+                                    <input  class="form-check-input" type="radio" name="likertsam2" value="zero">
                                     <img src="../imagens/Frustrado.png" width="80px">
                                 </li>
                                 <li>
-                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input   class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex2" value="one">
+                                    <input  class="form-check-input" type="radio" name="likertsam2" value="one">
                                     <img src="../imagens/Confuso.png" width="80px">
                                 </li>
                                 <li>
-                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input   class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex2" value="two">
+                                    <input  class="form-check-input" type="radio" name="likertsam2" value="two">
                                     <img src="../imagens/Neutro.png" width="80px">
                                 </li>
             
                                 <li>
-                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input   class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex2" value="three">
+                                    <input  class="form-check-input" type="radio" name="likertsam2" value="three">
                                     <img src="../imagens/Sorriso.png" width="80px">
                                 </li>
                                 <li>
-                                    <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                                    <input   class="form-check-input" type="radio" name="likertsam2"   value="" aria-label="...">
                                 </li>
             
                                 <li>
-                                    <input  class="form-check-input" type="radio" name="likertex2" value="four" checked> 
+                                    <input  class="form-check-input" type="radio" name="likertsam2" value="four" checked> 
                                     <img src="../imagens/Inteligente.png" width="80px">
                                 </li>
                             </ul>
@@ -228,7 +247,7 @@
             </div>
 
 
-            <form>
+            <form id="myForm">
 
                 <hr>
 
@@ -248,45 +267,45 @@
 
                 <ul class='likert'>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
+                        <input  class="form-check-input" type="radio" name="likert1" value="1">
                         <img src="../imagens/Like.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert1"   value="2" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
+                        <input  class="form-check-input" type="radio" name="likert1" value="3">
                         <img src="../imagens/Sorriso.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert1"   value="4" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
+                        <input  class="form-check-input" type="radio" name="likert1" value="5">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert1"   value="6" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
+                        <input  class="form-check-input" type="radio" name="likert1" value="7">
                         <img src="../imagens/Triste.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert1"   value="8" aria-label="...">
                     </li>
 
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
+                        <input  class="form-check-input" type="radio" name="likert1" value="9">
                         <img src="../imagens/Deslike.png" width="80px">
                     </li>
                 </ul>
 
-            </form>
+            
 
             <hr>
-            <form>
+            
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
@@ -304,45 +323,45 @@
 
                 <ul class='likert'>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
+                        <input  class="form-check-input" type="radio" name="likert2" value="1">
                         <img src="../imagens/Criativo.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert2"   value="2" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
+                        <input  class="form-check-input" type="radio" name="likert2" value="3">
                         <img src="../imagens/Radiante.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert2"   value="4" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
+                        <input  class="form-check-input" type="radio" name="likert2" value="5">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert2"   value="6" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
+                        <input  class="form-check-input" type="radio" name="likert2" value="7">
                         <img src="../imagens/Entendiado.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert2"   value="8" aria-label="...">
                     </li>
 
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
+                        <input  class="form-check-input" type="radio" name="likert2" value="9">
                         <img src="../imagens/Sono.png" width="80px">
                     </li>
                 </ul>
 
-            </form>
+            
 
             <hr>
-            <form>
+            
                 
                     <div class="accordion" id="accordionExampleThree">
                         <div class="accordion-item">
@@ -361,37 +380,37 @@
 
                 <ul class='likert'>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="zero">
+                        <input  class="form-check-input" type="radio" name="likert3" value="1">
                         <img src="../imagens/Frustrado.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert3"   value="2" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="one">
+                        <input  class="form-check-input" type="radio" name="likert3" value="3">
                         <img src="../imagens/Confuso.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert3"   value="4" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="two">
+                        <input  class="form-check-input" type="radio" name="likert3" value="5">
                         <img src="../imagens/Neutro.png" width="80px">
                     </li>
 
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert3"   value="6" aria-label="...">
                     </li>
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="three">
+                        <input  class="form-check-input" type="radio" name="likert3" value="7">
                         <img src="../imagens/Sorriso.png" width="80px">
                     </li>
                     <li>
-                        <input   class="form-check-input" type="radio" name="likertex2" id="radioNoLabel1" value="" aria-label="...">
+                        <input   class="form-check-input" type="radio" name="likert3"   value="8" aria-label="...">
                     </li>
 
                     <li>
-                        <input  class="form-check-input" type="radio" name="likertex2" value="four">
+                        <input  class="form-check-input" type="radio" name="likert3" value="9">
                         <img src="../imagens/Inteligente.png" width="80px">
                     </li>
                 </ul>
@@ -402,11 +421,13 @@
 
 
                     
-                    <div class="mr-auto">
-                        <button type="button" class="btn btn-lg whitebutton">Enviar</button>
-                      </div>                      
+                                        
                 </form>
+
+
             </div>
+            <button class="btn btn-lg whitebutton" onclick="SubForm()">Enviar</button>
+
 
         </div>
     </div>
