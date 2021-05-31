@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    
+    
+           <!-- Font Awesome -->
+           <script src="https://kit.fontawesome.com/da5eb6a3ca.js" crossorigin="anonymous"></script>
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/estilo.css">
+        <script src="contraste.js"></script>
+        <script src="fontsize.js"></script>
+    
+    
+        <title>EMOFRAME</title>
+      </head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+         <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00bfa5;">
+        <div class="container">
+          <a class="navbar-brand" href="ferramentas.html">
+              <img src="imagens/emoframe.png"  width="50"alt="logo emoframe">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="nav ms-auto">
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle btn" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><span class="fas fa-universal-access fa-lg"></span> Acessibilidade</a>
+                  <ul class="dropdown-menu">
+                    <li onclick="window.Font('aumentar')"><a class="dropdown-item">Aumentar fonte <span class="fas fa-plus-circle fa-lg"></span></a></li>
+                    <li onclick="window.Font('diminuir')"><a class="dropdown-item">Diminuir fonte <span class="fas fa-minus-circle fa-lg"></span></a></li>
+                    <li><a class="dropdown-item" onkeydown="window.toggleContrast()">Contraste <span class="fas fa-adjust fa-lg"></span></a></li>
+                  </ul>
+                  
+                </li>
+
+              </ul>
+          </div>
+         
+        </div>
+      </nav>
+        <!-- Navbar -->
+
+
+
+        <nav style="--bs-breadcrumb-divider: '>'; background-color:;" aria-label="breadcrumb">
+            <ol class="breadcrumb  p-2">
+                <li class="breadcrumb-item active" aria-current="page">Página Inicial</li>
+                <li class="text-center ms-auto"><img class="avatar avatar-32  rounded-circle" src="imagens/suzane.jpeg"  width="30px;"/><p style="font-weight: bold;">Suzane Santos</p></li>
+            </ol>
+
+        </nav>
+
+        <div class="container-fluid ">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="">Ferramentas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cadastrar-user.html">Cadastrar Usuários</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="resultados.html">Resultados</a>
+                </li>
+                
+                
+              </ul>
+
+              
+        </div>
+
+        <div class="container text-center">
+
+            <div class="row m-3 text-center">
+                <div class="col-sm">
+                    <div class="card cardBtn acessibilidade" style="width: 18rem;"
+                        onclick="window.location.href='sus/sus.html'">
+                        <img class="card-img-top" src="imagens/SUS2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">A escala de usabilidade do sistema (SUS), oferece uma maneira rápida e eficaz de avaliar a usabilidade de seus produtos e designs. O SUS é uma ferramenta prática e confiável para medir a facilidade de uso percebida pelos usuários.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='gds/gds.html'">
+                        <img class="card-img-top" src="imagens/GDS2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">A Escala de Depressão Geriátrica (GDS) é um dos instrumentos mais utilizados para rastrear a depressão em idosos. O GDS de 15 itens é uma versão resumida do GDS original a partir de itens mais fortemente correlacionados à detecção de depressão.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='poms/poms.html'">
+                        <img class="card-img-top" src="imagens/POMS2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">O Perfil dos Estados de Humor (POMS) é uma escala de avaliação psicológica usada para avaliar estados de humor distintos e transitórios. As vantagens de usar essa avaliação incluem a simplicidade de administração e a facilidade.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-3">
+                <div class="col-sm">
+                    <div class="card cardBtn" class="erick" style="width: 18rem;"
+                        onclick="window.location.href='ds/ds.html'">
+                        <img class="card-img-top" src="imagens/DS2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center"> O diferencial semântico (DS) é uma escala de avaliação de pesquisa ou questionário que pede às pessoas que avaliem um produto, empresa, etc. Essas opções de resposta à pesquisa estão gramaticalmente em adjetivos opostos em cada extremidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='whoqol/whoqol.html'">
+                        <img class="card-img-top" src="imagens/WHOQOL2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">O WHOQOL é uma avaliação de qualidade de vida desenvolvida pela OMS com quinze centros de campo internacionais, simultaneamente, na tentativa de desenvolver uma avaliação de qualidade de vida que seja aplicável transculturalmente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card cardBtn" style="width: 18rem;" onclick="window.location.href='sam/sam.html'">
+                        <img class="card-img-top" src="imagens/SAM2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center"> O Self-Assessment Manikin (SAM) é uma técnica de avaliação pictórica não verbal que mede diretamente o prazer, a excitação e a dominância associados à reação afetiva de uma pessoa a uma ampla variedade de estímulos. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+</body>
+
+<footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3">
+        © 2021 Suzane Santos dos Santos
+
+    </div>
+    <!-- Copyright -->
+</footer>
+
+
+   <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+</html>
